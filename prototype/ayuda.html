@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayuda y contacto · Ruta U</title>
+<meta name="description" content="Preguntas frecuentes, canales de atención, PQRS y glosario de términos.">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+</head>
+<body>
+<div data-shell-header data-active="ayuda"></div>
+
+<main id="contenido">
+
+  <div class="breadcrumb"><div class="container"><ol>
+    <li><a href="index.html">Inicio</a></li>
+    <li><span aria-current="page">Ayuda</span></li>
+  </ol></div></div>
+
+  <header class="page-head">
+    <div class="container">
+      <span class="eyebrow">Soporte</span>
+      <h1>Ayuda y contacto</h1>
+      <p>Primero las respuestas rápidas. Si tu caso es particular, radica una PQRS y síguela con el número de radicado.</p>
+    </div>
+  </header>
+
+  <div class="container section-sm">
+    <div class="two-col">
+
+      <div>
+        <h2>Preguntas frecuentes</h2>
+        <div class="accordion" style="margin-bottom:32px">
+          <details open>
+            <summary>¿Cuánto tarda un certificado de notas?</summary>
+            <div class="acc-body">Un día hábil en formato PDF. Si lo necesitas impreso, se reclama en Registro Académico al día siguiente de la solicitud.</div>
+          </details>
+          <details>
+            <summary>¿Puedo pedir un trámite sin estar matriculado?</summary>
+            <div class="acc-body">Sí, los egresados pueden solicitar certificados y duplicados de diploma. Algunos trámites académicos requieren matrícula vigente.</div>
+          </details>
+          <details>
+            <summary>¿Qué hago si mi trámite lleva más tiempo del indicado?</summary>
+            <div class="acc-body">Consulta el estado en <a href="radicados.html">Mis radicados</a>. Si supera el tiempo estimado, escribe a la dependencia responsable desde la ficha del trámite.</div>
+          </details>
+          <details>
+            <summary>¿Cómo sé si me falta un requisito?</summary>
+            <div class="acc-body">Cada ficha indica los requisitos y el sistema te avisa si falta un documento antes de radicar.</div>
+          </details>
+          <details>
+            <summary>¿Los trámites tienen costo?</summary>
+            <div class="acc-body">La mayoría son gratuitos en formato digital. Los costos, cuando existen, aparecen en la ficha antes de iniciar la solicitud.</div>
+          </details>
+          <details>
+            <summary>¿El portal es accesible con lector de pantalla?</summary>
+            <div class="acc-body">Sí. Ruta U cumple WCAG 2.1 nivel AA y permite navegar todo el flujo con teclado. Consulta la <a href="accesibilidad.html">declaración de accesibilidad</a>.</div>
+          </details>
+        </div>
+
+        <h2>Radicar una PQRS</h2>
+        <p class="muted">Petición, queja, reclamo o sugerencia. Recibirás un número de radicado y una respuesta en máximo 15 días hábiles.</p>
+
+        <form class="card mt4" onsubmit="event.preventDefault(); window.toast('PQRS radicada (simulación). Tu número es RAD-2026-015999.'); this.reset();">
+          <div class="grid grid-2">
+            <div class="field">
+              <label for="nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+              <input id="nombre" name="nombre" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="documento">Documento de identidad <span class="req" aria-hidden="true">*</span></label>
+              <input id="documento" name="documento" type="text" required inputmode="numeric">
+            </div>
+          </div>
+          <div class="grid grid-2">
+            <div class="field">
+              <label for="correo">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+              <input id="correo" name="correo" type="email" required autocomplete="email">
+              <p class="hint">Aquí recibirás la respuesta.</p>
+            </div>
+            <div class="field">
+              <label for="tipo">Tipo de solicitud</label>
+              <select id="tipo" name="tipo">
+                <option>Petición</option>
+                <option>Queja</option>
+                <option>Reclamo</option>
+                <option>Sugerencia</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="mensaje">Describe tu caso <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <p class="hint">No incluyas datos de salud ni información sensible.</p>
+          </div>
+          <div class="field">
+            <label class="check"><input type="checkbox" required> Acepto la <a href="#">política de tratamiento de datos personales</a>.</label>
+          </div>
+          <button class="btn btn-primary" type="submit">Radicar PQRS</button>
+          <p class="hint" style="margin-top:10px">Los campos marcados con <span class="req">*</span> son obligatorios.</p>
+        </form>
+
+        <h2 class="mt6" id="glosario">Glosario de términos</h2>
+        <p class="muted">El vocabulario controlado del portal, en lenguaje claro.</p>
+        <div class="accordion" data-glosario></div>
+      </div>
+
+      <aside>
+        <div class="side-card" style="position:static">
+          <h2>Canales de atención</h2>
+          <dl class="dl">
+            <div><dt>Teléfono</dt><dd>(601) 555 0100</dd></div>
+            <div><dt>Correo</dt><dd>tramites@usr.edu.co</dd></div>
+            <div><dt>WhatsApp</dt><dd>+57 310 555 0100</dd></div>
+            <div><dt>Presencial</dt><dd>Bloque A, piso 1</dd></div>
+            <div><dt>Horario</dt><dd>L–V, 7:00–18:00</dd></div>
+          </dl>
+        </div>
+        <div class="side-card" style="position:static">
+          <h2>Antes de escribirnos</h2>
+          <ul class="small muted" style="padding-left:1.1em;margin:0">
+            <li>Revisa el estado en <a href="radicados.html">Mis radicados</a>.</li>
+            <li>Ten a mano el número de radicado.</li>
+            <li>Si es sobre un trámite, abre su ficha: casi todas las dudas están allí.</li>
+          </ul>
+        </div>
+        <div class="alert alert-info" style="margin-top:16px">
+          <span data-icon="access"></span>
+          <div><strong>¿Necesitas otro formato?</strong> Puedes solicitar atención con intérprete de Lengua de Señas o documentos en formato accesible.</div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+<div data-shell-footer></div>
+<div data-shell-tabbar data-active="ayuda"></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+<script>
+  var g = document.querySelector("[data-glosario]");
+  if (g && window.RUTAU) {
+    g.innerHTML = window.RUTAU.glosario.map(function (x, i) {
+      return "<details" + (i === 0 ? " open" : "") + "><summary>" + x.t + "</summary><div class='acc-body'>" + x.d + "</div></details>";
+    }).join("");
+  }
+</script>
+</body>
+</html>

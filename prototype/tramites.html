@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trámites · Ruta U</title>
+<meta name="description" content="Los 28 trámites universitarios organizados por ciclo de vida y por perfil.">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+</head>
+<body>
+<div data-shell-header data-active="tramites"></div>
+
+<main id="contenido">
+
+  <div class="breadcrumb"><div class="container"><ol>
+    <li><a href="index.html">Inicio</a></li>
+    <li><span aria-current="page">Trámites</span></li>
+  </ol></div></div>
+
+  <header class="page-head" style="background:transparent;border:0;padding-top:8px">
+    <div class="container">
+      <span class="eyebrow">Catálogo completo</span>
+      <h1>Trámites</h1>
+      <p>Los 28 trámites de la Universidad, con la misma estructura de información: para qué sirven, quién puede pedirlos, requisitos, costo y tiempo. Puedes llegar por perfil o por momento académico.</p>
+
+      <form class="search-box" role="search" data-search-form style="margin-top:20px">
+        <label class="sr-only" for="q-hub">Buscar un trámite</label>
+        <input id="q-hub" type="search" name="q" placeholder="Busca por nombre o por lo que necesitas: «notas», «beca», «diploma»">
+        <button class="btn btn-primary" type="submit"><span data-icon="search"></span> Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <div class="container" style="padding-top:24px">
+    <div data-perfil-banner hidden></div>
+  </div>
+
+  <!-- Eje 1: perfil -->
+  <section class="container" style="padding-top:8px">
+    <h2 class="h3" style="font-size:1rem;margin-bottom:10px">Filtrar por perfil</h2>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a class="chip" href="tramites.html"><span>Todos</span></a>
+      <a class="chip" href="tramites.html?perfil=aspirante">Aspirante</a>
+      <a class="chip" href="tramites.html?perfil=estudiante">Estudiante</a>
+      <a class="chip" href="tramites.html?perfil=egresado">Egresado</a>
+      <a class="chip" href="tramites.html?perfil=docente">Docente y administrativo</a>
+    </div>
+  </section>
+
+  <!-- Eje 2: ciclo -->
+  <section class="container" style="padding-top:24px">
+    <h2 style="font-size:1rem;margin-bottom:10px">Filtrar por momento académico</h2>
+    <div style="display:flex;gap:8px;flex-wrap:wrap" role="group" aria-label="Filtrar por ciclo de vida">
+      <button class="chip" type="button" data-filtro-ciclo="todos" aria-pressed="true">Todos</button>
+      <button class="chip" type="button" data-filtro-ciclo="admision" aria-pressed="false">Ingreso y admisión</button>
+      <button class="chip" type="button" data-filtro-ciclo="academico" aria-pressed="false">Vida académica</button>
+      <button class="chip" type="button" data-filtro-ciclo="financiero" aria-pressed="false">Pagos y financiación</button>
+      <button class="chip" type="button" data-filtro-ciclo="grado" aria-pressed="false">Grado y titulación</button>
+      <button class="chip" type="button" data-filtro-ciclo="bienestar" aria-pressed="false">Bienestar y apoyo</button>
+    </div>
+  </section>
+
+  <div class="container" data-all-tramites></div>
+
+  <!-- Ayuda de navegación -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="alert alert-info">
+        <span data-icon="info"></span>
+        <div>
+          <strong>¿No encuentras el trámite por su nombre?</strong>
+          Muchas personas buscan «récord», «constancia» o «papeles para la visa» y el portal usa otros términos.
+          <a href="asistente.html">Prueba el asistente</a> o revisa el <a href="ayuda.html#glosario">glosario de términos</a>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div data-shell-footer></div>
+<div data-shell-tabbar data-active="tramites"></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>

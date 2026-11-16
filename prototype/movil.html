@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Versión móvil · Ruta U</title>
+<meta name="description" content="Vista móvil del prototipo: mismas pantallas, misma arquitectura, navegación inferior.">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+<style>
+  .devices { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start; }
+  .device { width: 330px; }
+  .device-frame {
+    width: 330px; height: 680px; border-radius: 34px; background: #10222a;
+    padding: 10px; box-shadow: 0 18px 40px rgba(16, 28, 40, .22);
+  }
+  .device-screen { width: 100%; height: 100%; border-radius: 26px; overflow: hidden; background: #fff; }
+  .device-screen iframe { width: 390px; height: 800px; border: 0; transform: scale(.7948); transform-origin: top left; }
+  .device-cap { text-align: center; margin-top: 14px; font-size: .875rem; color: var(--ink-3); }
+  .device-cap strong { display: block; color: var(--ink); font-size: .9375rem; }
+  .bp { display: flex; gap: 12px; flex-wrap: wrap; }
+  .bp div { flex: 1; min-width: 160px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; }
+  .bp strong { display: block; color: var(--brand); }
+</style>
+</head>
+<body>
+<div data-shell-header data-active=""></div>
+
+<main id="contenido">
+
+  <div class="breadcrumb"><div class="container"><ol>
+    <li><a href="index.html">Inicio</a></li>
+    <li><span aria-current="page">Versión móvil</span></li>
+  </ol></div></div>
+
+  <header class="page-head">
+    <div class="container">
+      <span class="eyebrow">Vista de dispositivos</span>
+      <h1>Versión móvil</h1>
+      <p>No es un prototipo aparte: es el mismo código, adaptado desde 320 px. La navegación global cambia a una barra inferior de cinco destinos y el menú se reorganiza en una sola columna.</p>
+    </div>
+  </header>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="devices">
+        <div class="device">
+          <div class="device-frame"><div class="device-screen"><iframe src="index.html" title="Inicio en móvil" loading="lazy"></iframe></div></div>
+          <p class="device-cap"><strong>Inicio</strong>Buscador primero, accesos por perfil y ciclo.</p>
+        </div>
+        <div class="device">
+          <div class="device-frame"><div class="device-screen"><iframe src="tramites.html" title="Trámites en móvil" loading="lazy"></iframe></div></div>
+          <p class="device-cap"><strong>Trámites</strong>Dos ejes en pestañas y listado en una columna.</p>
+        </div>
+        <div class="device">
+          <div class="device-frame"><div class="device-screen"><iframe src="tramite.html?id=certificado-notas" title="Ficha de trámite en móvil" loading="lazy"></iframe></div></div>
+          <p class="device-cap"><strong>Ficha de trámite</strong>Resumen, requisitos y CTA antes de los pasos.</p>
+        </div>
+        <div class="device">
+          <div class="device-frame"><div class="device-screen"><iframe src="buscar.html?q=certificado" title="Búsqueda en móvil" loading="lazy"></iframe></div></div>
+          <p class="device-cap"><strong>Búsqueda</strong>Filtros plegados, resultados en tarjetas.</p>
+        </div>
+        <div class="device">
+          <div class="device-frame"><div class="device-screen"><iframe src="radicados.html" title="Radicados en móvil" loading="lazy"></iframe></div></div>
+          <p class="device-cap"><strong>Mis radicados</strong>Estado y progreso visibles sin entrar al detalle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm band">
+    <div class="container">
+      <h2>Puntos de quiebre definidos</h2>
+      <p class="muted">La retícula y la navegación cambian en tres puntos, no en cada pantalla. Es una decisión de sistema, no de página.</p>
+      <div class="bp mt5">
+        <div><strong>≥ 1001 px</strong>Escritorio: 12 columnas, navegación superior completa, panel lateral en fichas y búsqueda.</div>
+        <div><strong>821 – 1000 px</strong>Tableta horizontal: una columna con panel lateral debajo; la navegación superior se mantiene.</div>
+        <div><strong>≤ 820 px</strong>Menú colapsado en botón; acciones secundarias se ocultan.</div>
+        <div><strong>≤ 720 px</strong>Móvil: barra inferior de 5 destinos, tarjetas a una columna, tipografía 15,5 px y área táctil de 44 px.</div>
+      </div>
+      <div class="note-box mt5">Los iframes de esta página son una vitrina para la presentación. El prototipo real se evalúa abriendo cada pantalla en el navegador y redimensionando la ventana.</div>
+    </div>
+  </section>
+
+</main>
+
+<div data-shell-footer></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>

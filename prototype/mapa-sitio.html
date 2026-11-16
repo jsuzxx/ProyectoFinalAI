@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa del sitio · Ruta U</title>
+<meta name="description" content="Estructura jerárquica completa del portal Ruta U.">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+<style>
+  .sm-tree { list-style: none; margin: 0; padding: 0; }
+  .sm-tree ul { list-style: none; margin: 10px 0 0 0; padding-left: 22px; border-left: 1px solid var(--line); }
+  .sm-tree li { margin: 0 0 10px; position: relative; padding-left: 4px; }
+  .sm-tree > li > a { font-weight: 650; font-size: 1.0625rem; }
+  .sm-tree ul li::before { content: ""; position: absolute; left: -22px; top: 14px; width: 16px; height: 1px; background: var(--line); }
+  .sm-tree .lvl3 a { font-size: .9375rem; color: var(--ink-2); }
+  .sm-col { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: var(--s5); }
+</style>
+</head>
+<body>
+<div data-shell-header data-active=""></div>
+
+<main id="contenido">
+
+  <div class="breadcrumb"><div class="container"><ol>
+    <li><a href="index.html">Inicio</a></li>
+    <li><span aria-current="page">Mapa del sitio</span></li>
+  </ol></div></div>
+
+  <header class="page-head">
+    <div class="container">
+      <span class="eyebrow">Navegación suplementaria</span>
+      <h1>Mapa del sitio</h1>
+      <p>La estructura completa del portal en texto. Es la versión navegable del diagrama jerárquico de la arquitectura de la información: cinco secciones de primer nivel y un máximo de cuatro niveles de profundidad.</p>
+    </div>
+  </header>
+
+  <div class="container section-sm">
+    <div class="grid grid-2" style="align-items:start">
+
+      <div class="sm-col">
+        <ul class="sm-tree">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tramites.html">Trámites</a>
+            <ul>
+              <li class="lvl3"><a href="tramites.html?perfil=aspirante">Por perfil</a>
+                <ul>
+                  <li class="lvl3"><a href="tramites.html?perfil=aspirante">Aspirante</a></li>
+                  <li class="lvl3"><a href="tramites.html?perfil=estudiante">Estudiante</a></li>
+                  <li class="lvl3"><a href="tramites.html?perfil=egresado">Egresado</a></li>
+                  <li class="lvl3"><a href="tramites.html?perfil=docente">Docente y administrativo</a></li>
+                </ul>
+              </li>
+              <li class="lvl3"><a href="tramites.html#ciclo-admision">Por momento académico</a>
+                <ul>
+                  <li class="lvl3"><a href="tramites.html#ciclo-admision">Ingreso y admisión</a></li>
+                  <li class="lvl3"><a href="tramites.html#ciclo-academico">Vida académica</a></li>
+                  <li class="lvl3"><a href="tramites.html#ciclo-financiero">Pagos y financiación</a></li>
+                  <li class="lvl3"><a href="tramites.html#ciclo-grado">Grado y titulación</a></li>
+                  <li class="lvl3"><a href="tramites.html#ciclo-bienestar">Bienestar y apoyo</a></li>
+                </ul>
+              </li>
+              <li class="lvl3"><a href="asistente.html">Asistente de trámites</a></li>
+              <li class="lvl3"><a href="buscar.html">Buscador y filtros</a></li>
+              <li class="lvl3"><a href="tramite.html?id=certificado-notas">Ficha de trámite</a> (plantilla única, 28 instancias)</li>
+            </ul>
+          </li>
+          <li><a href="servicios.html">Servicios</a>
+            <ul>
+              <li class="lvl3"><a href="servicios.html">Biblioteca</a></li>
+              <li class="lvl3"><a href="servicios.html">Correo institucional</a></li>
+              <li class="lvl3"><a href="servicios.html">Licencias de software</a></li>
+              <li class="lvl3"><a href="servicios.html">Deportes y recreación</a></li>
+              <li class="lvl3"><a href="tramite.html?id=interprete-senas">Unidad de Inclusión</a></li>
+              <li class="lvl3"><a href="servicios.html">Oficina de egresados</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sm-col">
+        <ul class="sm-tree">
+          <li><a href="normativa.html">Normativa y calendario</a>
+            <ul>
+              <li class="lvl3"><a href="normativa.html">Reglamentos y acuerdos</a></li>
+              <li class="lvl3"><a href="normativa.html">Calendario académico</a></li>
+              <li class="lvl3"><a href="normativa.html">Políticas institucionales</a></li>
+            </ul>
+          </li>
+          <li><a href="ayuda.html">Ayuda</a>
+            <ul>
+              <li class="lvl3"><a href="ayuda.html">Preguntas frecuentes</a></li>
+              <li class="lvl3"><a href="ayuda.html">Canales de atención</a></li>
+              <li class="lvl3"><a href="ayuda.html">Radicar una PQRS</a></li>
+              <li class="lvl3"><a href="ayuda.html#glosario">Glosario de términos</a></li>
+              <li class="lvl3"><a href="accesibilidad.html">Declaración de accesibilidad</a></li>
+            </ul>
+          </li>
+          <li><a href="radicados.html">Mi perfil</a>
+            <ul>
+              <li class="lvl3"><a href="radicados.html">Mis radicados</a></li>
+              <li class="lvl3"><a href="radicados.html">Mis datos</a></li>
+              <li class="lvl3"><a href="radicados.html">Notificaciones</a></li>
+            </ul>
+          </li>
+          <li><a href="mapa-sitio.html">Mapa del sitio</a></li>
+          <li><a href="accesibilidad.html">Accesibilidad</a></li>
+        </ul>
+
+        <div class="note-box mt5">
+          <strong>Regla de profundidad:</strong> ningún contenido útil está a más de 4 niveles desde Inicio.
+          Las fichas de trámite quedan en el nivel 4: Inicio › Trámites › Vida académica › Certificado de notas.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<div data-shell-footer></div>
+<div data-shell-tabbar data-active="inicio"></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buscar trámites · Ruta U</title>
+<meta name="description" content="Busca entre los 28 trámites por palabra clave, perfil, ciclo, modalidad, costo y tiempo.">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+</head>
+<body>
+<div data-shell-header data-active="tramites"></div>
+
+<main id="contenido">
+
+  <div class="breadcrumb"><div class="container"><ol>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="tramites.html">Trámites</a></li>
+    <li><span aria-current="page">Buscar</span></li>
+  </ol></div></div>
+
+  <header class="page-head">
+    <div class="container">
+      <h1>Buscar trámites</h1>
+      <p>Escribe lo que necesitas con tus palabras. El buscador reconoce sinónimos como «récord académico», «papeles para la visa» o «carné perdido».</p>
+    </div>
+  </header>
+
+  <div class="container layout-search">
+
+    <!-- Panel de filtros -->
+    <form class="filters" data-filters aria-label="Filtros de búsqueda">
+      <h2>Filtros</h2>
+
+      <div class="filter-group">
+        <label class="label" for="q">Palabra clave</label>
+        <input id="q" type="search" name="q" placeholder="Ej.: certificado" data-q autocomplete="off">
+      </div>
+
+      <div class="filter-group">
+        <span class="label" id="f-perfil">Perfil</span>
+        <div role="radiogroup" aria-labelledby="f-perfil">
+          <label class="check"><input type="radio" name="perfil" value="aspirante"> Aspirante</label>
+          <label class="check"><input type="radio" name="perfil" value="estudiante"> Estudiante</label>
+          <label class="check"><input type="radio" name="perfil" value="egresado"> Egresado</label>
+          <label class="check"><input type="radio" name="perfil" value="docente"> Docente y administrativo</label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="label" id="f-ciclo">Momento académico</span>
+        <div role="radiogroup" aria-labelledby="f-ciclo">
+          <label class="check"><input type="radio" name="ciclo" value="admision"> Ingreso y admisión</label>
+          <label class="check"><input type="radio" name="ciclo" value="academico"> Vida académica</label>
+          <label class="check"><input type="radio" name="ciclo" value="financiero"> Pagos y financiación</label>
+          <label class="check"><input type="radio" name="ciclo" value="grado"> Grado y titulación</label>
+          <label class="check"><input type="radio" name="ciclo" value="bienestar"> Bienestar y apoyo</label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="label" id="f-mod">Modalidad</span>
+        <div role="radiogroup" aria-labelledby="f-mod">
+          <label class="check"><input type="radio" name="modalidad" value="Virtual"> Virtual</label>
+          <label class="check"><input type="radio" name="modalidad" value="Presencial"> Presencial</label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="label">Costos y tiempos</span>
+        <label class="check"><input type="checkbox" name="gratis"> Solo trámites sin costo</label>
+        <label class="check"><input type="checkbox" name="rapido"> Se resuelven en 3 días o menos</label>
+      </div>
+
+      <div class="filter-actions">
+        <button class="btn btn-ghost btn-sm" type="button" data-clear-all>Limpiar filtros</button>
+      </div>
+    </form>
+
+    <!-- Resultados -->
+    <div>
+      <div class="results-head">
+        <p class="result-count" data-count aria-live="polite" aria-atomic="true"></p>
+        <div style="display:flex;align-items:center;gap:8px">
+          <label class="small muted" for="orden">Ordenar por</label>
+          <select id="orden" data-order style="width:auto;min-width:170px">
+            <option value="relevancia">Más solicitados</option>
+            <option value="az">Nombre (A–Z)</option>
+            <option value="rapido">Respuesta más rápida</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px" data-active-filters></div>
+
+      <div class="result-list" data-results></div>
+
+      <div class="note-box mt5">
+        <strong>Consejo de arquitectura:</strong> los sinónimos son parte del sistema de etiquetado.
+        El buscador indexa «constancia académica», «récord», «certificado de calificaciones» y «notas» hacia una sola ficha,
+        para que nadie tenga que adivinar el nombre oficial del trámite.
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<div data-shell-footer></div>
+<div data-shell-tabbar data-active="buscar"></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>

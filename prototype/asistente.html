@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistente de trámites · Ruta U</title>
+<meta name="description" content="Tres preguntas para llegar al trámite correcto sin conocer su nombre oficial.">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+</head>
+<body>
+<div data-shell-header data-active="tramites"></div>
+
+<main id="contenido">
+
+  <div class="breadcrumb"><div class="container"><ol>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="tramites.html">Trámites</a></li>
+    <li><span aria-current="page">Asistente</span></li>
+  </ol></div></div>
+
+  <div class="container section">
+    <div class="wizard" data-wizard>
+
+      <div class="section-head" style="text-align:center;margin-inline:auto">
+        <span class="eyebrow">Asistente</span>
+        <h1 style="font-size:1.75rem">¿Qué necesitas resolver hoy?</h1>
+        <p>No necesitas saber el nombre del trámite. Responde tres preguntas y te mostramos las fichas que se ajustan a tu caso.</p>
+      </div>
+
+      <div class="progress" aria-hidden="true">
+        <div class="progress-step current"><div class="progress-bar"><span></span></div><span class="progress-label">1. Perfil</span></div>
+        <div class="progress-step"><div class="progress-bar"><span></span></div><span class="progress-label">2. Necesidad</span></div>
+        <div class="progress-step"><div class="progress-bar"><span></span></div><span class="progress-label">3. Urgencia</span></div>
+      </div>
+
+      <!-- Paso 1 -->
+      <div data-step="1">
+        <h2 data-step-title tabindex="-1" style="font-size:1.25rem">¿Cuál es tu vínculo con la Universidad?</h2>
+        <fieldset class="mt4">
+          <legend class="sr-only">Perfil</legend>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="perfil" value="aspirante"><strong>Aspirante</strong><span>Quiero entrar a la Universidad</span></label>
+            <label class="choice"><input type="radio" name="perfil" value="estudiante"><strong>Estudiante</strong><span>Estoy matriculado ahora</span></label>
+            <label class="choice"><input type="radio" name="perfil" value="egresado"><strong>Egresado</strong><span>Ya terminé o me gradué</span></label>
+            <label class="choice"><input type="radio" name="perfil" value="docente"><strong>Docente o administrativo</strong><span>Trabajo en la Universidad</span></label>
+          </div>
+        </fieldset>
+        <div style="display:flex;justify-content:flex-end;margin-top:24px">
+          <button class="btn btn-primary btn-lg" type="button" data-next>Continuar <span data-icon="arrow"></span></button>
+        </div>
+      </div>
+
+      <!-- Paso 2 -->
+      <div data-step="2" hidden>
+        <h2 data-step-title tabindex="-1" style="font-size:1.25rem">¿Qué necesitas hacer?</h2>
+        <fieldset class="mt4">
+          <legend class="sr-only">Necesidad</legend>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="necesidad" value="notas"><strong>Demostrar mis notas o que estudio</strong><span>Certificados para becas, bancos o empresas</span></label>
+            <label class="choice"><input type="radio" name="necesidad" value="matricula"><strong>Resolver algo de mi matrícula</strong><span>Cancelar, matricular tarde o pagar por cuotas</span></label>
+            <label class="choice"><input type="radio" name="necesidad" value="grado"><strong>Terminar y graduarme</strong><span>Solicitud de grado, ceremonia, diploma</span></label>
+            <label class="choice"><input type="radio" name="necesidad" value="dinero"><strong>Trámites de dinero</strong><span>Paz y salvo, becas, devoluciones</span></label>
+            <label class="choice"><input type="radio" name="necesidad" value="apoyo"><strong>Necesito apoyo o acompañamiento</strong><span>Psicología, apoyo económico, accesibilidad</span></label>
+            <label class="choice"><input type="radio" name="necesidad" value="admision"><strong>Quiero entrar a un programa</strong><span>Inscripción, resultados, posgrado</span></label>
+          </div>
+        </fieldset>
+        <div style="display:flex;justify-content:space-between;margin-top:24px">
+          <button class="btn btn-ghost" type="button" data-back>Volver</button>
+          <button class="btn btn-primary btn-lg" type="button" data-next>Continuar <span data-icon="arrow"></span></button>
+        </div>
+      </div>
+
+      <!-- Paso 3 -->
+      <div data-step="3" hidden>
+        <h2 data-step-title tabindex="-1" style="font-size:1.25rem">¿Para cuándo lo necesitas?</h2>
+        <p class="muted">Nos ayuda a priorizar trámites con respuesta rápida cuando tienes un plazo corto.</p>
+        <fieldset class="mt4">
+          <legend class="sr-only">Urgencia</legend>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="tiempo" value="hoy"><strong>Hoy o mañana</strong><span>Tengo un plazo muy corto</span></label>
+            <label class="choice"><input type="radio" name="tiempo" value="semana"><strong>Esta semana</strong><span>Puedo esperar unos días</span></label>
+            <label class="choice"><input type="radio" name="tiempo" value="mes"><strong>Sin afán</strong><span>Este mes o más adelante</span></label>
+          </div>
+        </fieldset>
+        <div style="display:flex;justify-content:space-between;margin-top:24px">
+          <button class="btn btn-ghost" type="button" data-back>Volver</button>
+          <button class="btn btn-primary btn-lg" type="button" data-next>Ver resultados</button>
+        </div>
+      </div>
+
+      <!-- Resultado -->
+      <div data-step="4" hidden>
+        <h2 data-step-title tabindex="-1" style="font-size:1.25rem">Tu ruta recomendada</h2>
+        <div data-wizard-result class="mt4"></div>
+        <div style="display:flex;justify-content:flex-start;margin-top:24px">
+          <button class="btn btn-ghost" type="button" onclick="location.reload()">Empezar de nuevo</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<div data-shell-footer></div>
+<div data-shell-tabbar data-active="tramites"></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>

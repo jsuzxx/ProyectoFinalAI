@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Declaración de accesibilidad · Ruta U</title>
+<meta name="description" content="Alcance, medidas y limitaciones conocidas de accesibilidad del prototipo Ruta U (WCAG 2.1 AA).">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+</head>
+<body>
+<div data-shell-header data-active=""></div>
+
+<main id="contenido">
+
+  <div class="breadcrumb"><div class="container"><ol>
+    <li><a href="index.html">Inicio</a></li>
+    <li><span aria-current="page">Accesibilidad</span></li>
+  </ol></div></div>
+
+  <header class="page-head">
+    <div class="container narrow">
+      <span class="eyebrow">Compromiso</span>
+      <h1>Declaración de accesibilidad</h1>
+      <p>Ruta U se diseñó para cumplir las Pautas de Accesibilidad para el Contenido Web <strong>WCAG 2.1, nivel AA</strong>. Esta declaración describe el alcance, las medidas aplicadas y las limitaciones conocidas del prototipo.</p>
+    </div>
+  </header>
+
+  <div class="container section-sm narrow">
+    <h2>Estado de conformidad</h2>
+    <div class="alert alert-ok" style="margin-bottom:24px">
+      <span data-icon="check"></span>
+      <div><strong>Conformidad AA en las pantallas del prototipo</strong>Evaluado con revisión manual y herramientas automatizadas. Última revisión: 14 de noviembre de 2026.</div>
+    </div>
+
+    <h2>Medidas aplicadas</h2>
+    <ul class="req-list" style="margin-bottom:24px">
+      <li><span class="checkmark" aria-hidden="true">✓</span><span><strong>Contraste:</strong> texto normal ≥ 4.5:1 y texto grande ≥ 3:1 en todos los componentes. Verificado con analizador de contraste.</span></li>
+      <li><span class="checkmark" aria-hidden="true">✓</span><span><strong>Teclado:</strong> todo el flujo se completa sin ratón, con foco visible de 3 px y orden lógico de tabulación.</span></li>
+      <li><span class="checkmark" aria-hidden="true">✓</span><span><strong>Estructura:</strong> un solo <code>h1</code> por página, jerarquía de encabezados sin saltos, regiones <code>main</code>, <code>nav</code> y <code>footer</code> con nombre accesible.</span></li>
+      <li><span class="checkmark" aria-hidden="true">✓</span><span><strong>Formularios:</strong> etiquetas asociadas, campos obligatorios indicados en texto (no solo con color), mensajes de error anunciados con <code>aria-live</code>.</span></li>
+      <li><span class="checkmark" aria-hidden="true">✓</span><span><strong>Navegación:</strong> enlace «Saltar al contenido», migas de pan, estado actual anunciado con <code>aria-current</code>, menú móvil operable con teclado y cerrable con <em>Escape</em>.</span></li>
+      <li><span class="checkmark" aria-hidden="true">✓</span><span><strong>Movimiento:</strong> respeta <code>prefers-reduced-motion</code>; ninguna animación es imprescindible para entender el estado.</span></li>
+      <li><span class="checkmark" aria-hidden="true">✓</span><span><strong>Contenido:</strong> lenguaje claro, sin siglas sin explicar, glosario de términos y textos alternativos en todos los iconos relevantes.</span></li>
+      <li><span class="checkmark" aria-hidden="true">✓</span><span><strong>Adaptación:</strong> diseño responsivo desde 320 px, sin desplazamiento horizontal, con área táctil mínima de 44 × 44 px.</span></li>
+    </ul>
+
+    <h2>Limitaciones conocidas</h2>
+    <div class="table-wrap" style="margin-bottom:24px">
+      <table>
+        <caption>Registro de limitaciones (septiembre 2026)</caption>
+        <thead><tr><th scope="col">Limitación</th><th scope="col">Impacto</th><th scope="col">Alternativa</th></tr></thead>
+        <tbody>
+          <tr><td>Los documentos PDF históricos (antes de 2019) no tienen etiquetas de estructura.</td><td>Un lector de pantalla los lee como imagen.</td><td>Solicitar versión accesible a Registro Académico; se entrega en 3 días hábiles.</td></tr>
+          <tr><td>El mapa de sedes se apoya en un componente de terceros.</td><td>Navegación limitada por teclado en el mapa.</td><td>Toda la información del mapa está disponible como listado de texto equivalente.</td></tr>
+          <tr><td>El intérprete de Lengua de Señas se solicita con 5 días hábiles.</td><td>No cubre urgencias del mismo día.</td><td>Canal de WhatsApp con atención prioritaria para estudiantes sordos.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Cómo reportar una barrera</h2>
+    <p>Si encuentras un problema de accesibilidad, escríbenos a <a href="mailto:accesibilidad@usr.edu.co">accesibilidad@usr.edu.co</a> indicando la página, el dispositivo y la tecnología de asistencia que usas. Respondemos en máximo 5 días hábiles.</p>
+    <div class="note-box mt4">
+      Esta declaración corresponde a un <strong>prototipo académico</strong>. Las cifras de cumplimiento se refieren a las pantallas construidas para el curso, no a un portal institucional en producción.
+    </div>
+  </div>
+
+</main>
+
+<div data-shell-footer></div>
+<div data-shell-tabbar data-active="ayuda"></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>

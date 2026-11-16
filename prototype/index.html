@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruta U · Trámites y servicios universitarios</title>
+<meta name="description" content="Encuentra, solicita y sigue tus trámites universitarios en un solo lugar. Prototipo de media fidelidad.">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+</head>
+<body>
+<div data-shell-header data-active="inicio"></div>
+
+<main id="contenido">
+
+  <!-- Héroe -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="eyebrow">Portal único de trámites</span>
+        <h1>Encuentra tu trámite y síguelo hasta el final.</h1>
+        <p class="lead">Certificados, matrícula, grado, becas y apoyo estudiantil: toda la información en un solo lugar, con requisitos claros y estado en línea.</p>
+
+        <form class="search-box" role="search" data-search-form>
+          <label class="sr-only" for="q-home">Buscar un trámite o servicio</label>
+          <input id="q-home" type="search" name="q" placeholder="Ej.: certificado de notas, paz y salvo, grado" autocomplete="off">
+          <button class="btn btn-primary" type="submit"><span data-icon="search"></span> Buscar</button>
+        </form>
+        <p class="search-hint">Búsquedas frecuentes:
+          <a href="buscar.html?q=certificado">certificado de notas</a> ·
+          <a href="buscar.html?q=paz%20y%20salvo">paz y salvo</a> ·
+          <a href="buscar.html?q=beca">becas</a> ·
+          <a href="buscar.html?q=grado">grado</a>
+        </p>
+      </div>
+
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+        <div class="mock-body">
+          <div class="mock-chips"><span class="mock-pill"></span><span class="mock-pill g"></span></div>
+          <div class="mock-line w80"></div>
+          <div class="mock-line w60"></div>
+          <div style="margin-top:16px">
+            <div class="mock-row"><span class="mock-chip"></span><span style="flex:1"><span class="mock-line w60" style="display:block;margin:0 0 6px"></span><span class="mock-line w40" style="display:block;margin:0"></span></span></div>
+            <div class="mock-row"><span class="mock-chip"></span><span style="flex:1"><span class="mock-line w80" style="display:block;margin:0 0 6px"></span><span class="mock-line w40" style="display:block;margin:0"></span></span></div>
+            <div class="mock-row"><span class="mock-chip"></span><span style="flex:1"><span class="mock-line w60" style="display:block;margin:0 0 6px"></span><span class="mock-line w40" style="display:block;margin:0"></span></span></div>
+          </div>
+          <div style="margin-top:18px"><span class="mock-pill" style="display:block;width:100%;height:34px;background:var(--brand-soft-2)"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lo más solicitado -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Lo más solicitado</span>
+        <h2>Resuelve primero lo urgente</h2>
+        <p>Estos son los trámites con más solicitudes este semestre. Cada ficha indica requisitos, costo y tiempo de respuesta antes de que empieces.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <a class="card" href="tramite.html?id=certificado-notas">
+          <div class="card-icon" data-icon="doc"></div>
+          <h3>Certificado de notas</h3>
+          <p>Asignaturas, calificaciones y promedio acumulado. Listo en 1 día hábil.</p>
+          <div class="card-meta"><span class="tag tag-ok">Sin costo</span><span class="tag tag-neutral">1 día hábil</span></div>
+        </a>
+        <a class="card" href="tramite.html?id=paz-y-salvo">
+          <div class="card-icon" data-icon="shield"></div>
+          <h3>Paz y salvo financiero</h3>
+          <p>Certifica que no tienes obligaciones pendientes con la Universidad.</p>
+          <div class="card-meta"><span class="tag tag-ok">Sin costo</span><span class="tag tag-neutral">1 día hábil</span></div>
+        </a>
+        <a class="card" href="tramite.html?id=certificado-grado">
+          <div class="card-icon" data-icon="graduation"></div>
+          <h3>Certificado de grado</h3>
+          <p>Constancia oficial de titulación para visas, colegios profesionales y empleos.</p>
+          <div class="card-meta"><span class="tag tag-ok">Sin costo</span><span class="tag tag-neutral">3 días hábiles</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perfiles -->
+  <section class="section-sm band">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Elige tu ruta</span>
+        <h2>¿Quién eres?</h2>
+        <p>Filtramos los trámites según tu vínculo con la Universidad. Puedes cambiar de perfil en cualquier momento.</p>
+      </div>
+      <div class="grid grid-4">
+        <a class="card" href="tramites.html?perfil=aspirante"><div class="card-icon" data-icon="door"></div><h3>Aspirante</h3><p>Inscripción, admisión y matrícula del primer semestre.</p><span class="card-link">Ver trámites <span data-icon="arrow"></span></span></a>
+        <a class="card" href="tramites.html?perfil=estudiante"><div class="card-icon" data-icon="book"></div><h3>Estudiante</h3><p>Notas, matrícula, homologaciones y bienestar.</p><span class="card-link">Ver trámites <span data-icon="arrow"></span></span></a>
+        <a class="card" href="tramites.html?perfil=egresado"><div class="card-icon" data-icon="graduation"></div><h3>Egresado</h3><p>Diplomas, certificados y trámites de titulación.</p><span class="card-link">Ver trámites <span data-icon="arrow"></span></span></a>
+        <a class="card" href="tramites.html?perfil=docente"><div class="card-icon" data-icon="building"></div><h3>Docente y administrativo</h3><p>Gestión académica y solicitudes internas.</p><span class="card-link">Ver trámites <span data-icon="arrow"></span></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ciclos de vida -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Otra forma de llegar</span>
+        <h2>Explora por momento de tu vida académica</h2>
+        <p>Si no sabes el nombre exacto del trámite, empieza por el momento en el que estás. Es el segundo eje de navegación del portal.</p>
+      </div>
+      <div class="grid grid-3">
+        <a class="card" href="tramites.html#ciclo-admision"><span class="tag tag-neutral">Antes de entrar</span><h3 class="mt4">Ingreso y admisión</h3><p>Inscripción, resultados, matrícula inicial y homologación de admitidos.</p><span class="card-link">3 trámites <span data-icon="arrow"></span></span></a>
+        <a class="card" href="tramites.html#ciclo-academico"><span class="tag tag-neutral">Semestre a semestre</span><h3 class="mt4">Vida académica</h3><p>Notas, certificados, homologaciones, revisión de calificaciones y matrícula.</p><span class="card-link">10 trámites <span data-icon="arrow"></span></span></a>
+        <a class="card" href="tramites.html#ciclo-financiero"><span class="tag tag-neutral">Pagos y apoyos</span><h3 class="mt4">Pagos y financiación</h3><p>Paz y salvo, becas, acuerdos de pago y devoluciones.</p><span class="card-link">6 trámites <span data-icon="arrow"></span></span></a>
+        <a class="card" href="tramites.html#ciclo-grado"><span class="tag tag-neutral">Al terminar</span><h3 class="mt4">Grado y titulación</h3><p>Solicitud de grado, ceremonia, trabajo de grado y diplomas.</p><span class="card-link">5 trámites <span data-icon="arrow"></span></span></a>
+        <a class="card" href="tramites.html#ciclo-bienestar"><span class="tag tag-neutral">Durante todo el camino</span><h3 class="mt4">Bienestar y apoyo</h3><p>Psicología, apoyos económicos, transporte e inclusión.</p><span class="card-link">4 trámites <span data-icon="arrow"></span></span></a>
+        <a class="card" href="tramites.html"><span class="tag tag-neutral">Vista completa</span><h3 class="mt4">Todos los trámites</h3><p>Listado A–Z con buscador y filtros por perfil, modalidad y costo.</p><span class="card-link">28 trámites <span data-icon="arrow"></span></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Asistente -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="card" style="padding:var(--s6);display:grid;grid-template-columns:1.3fr .7fr;gap:var(--s5);align-items:center">
+        <div>
+          <span class="eyebrow">Si no sabes cómo se llama</span>
+          <h2>Cuéntanos qué necesitas y te llevamos al trámite correcto</h2>
+          <p>Tres preguntas, treinta segundos. El asistente traduce tu necesidad a lenguaje administrativo: «necesito mis notas para una beca» → Certificado de notas.</p>
+          <a class="btn btn-primary btn-lg" href="asistente.html">Usar el asistente <span data-icon="arrow"></span></a>
+        </div>
+        <div class="note-box">
+          <strong style="display:block;margin-bottom:6px">Por qué existe</strong>
+          En las entrevistas, 4 de 6 personas no conocían el nombre oficial del trámite que necesitaban. El asistente cubre ese vacío sin reemplazar el buscador.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confianza -->
+  <section class="section-sm band">
+    <div class="container">
+      <div class="stats">
+        <div class="stat"><div class="num">28</div><div class="label">trámites con ficha estandarizada</div></div>
+        <div class="stat"><div class="num">1</div><div class="label">número de radicado para seguirlos todos</div></div>
+        <div class="stat"><div class="num">AA</div><div class="label">cumplimiento WCAG 2.1 en el prototipo</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ayuda -->
+  <section class="section">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Soporte</span>
+        <h2>¿No encontraste lo que buscabas?</h2>
+        <p class="muted">La mesa de ayuda responde de lunes a viernes de 7:00 a 18:00. También puedes radicar una PQRS y seguirla con tu número de radicado.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:var(--s4)">
+          <a class="btn btn-primary" href="ayuda.html">Radicar una PQRS</a>
+          <a class="btn btn-secondary" href="ayuda.html">Ver preguntas frecuentes</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Canales de atención</h3>
+        <dl class="dl">
+          <div><dt>Teléfono</dt><dd>(601) 555 0100</dd></div>
+          <div><dt>Correo</dt><dd>tramites@usr.edu.co</dd></div>
+          <div><dt>WhatsApp</dt><dd>+57 310 555 0100</dd></div>
+          <div><dt>Presencial</dt><dd>Bloque A, piso 1</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div data-shell-footer></div>
+<div data-shell-tabbar data-active="inicio"></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>

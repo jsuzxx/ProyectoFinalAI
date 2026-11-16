@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis radicados · Ruta U</title>
+<meta name="description" content="Sigue el estado de tus solicitudes con un solo número de radicado.">
+<link rel="stylesheet" href="assets/styles.css?v=2">
+</head>
+<body>
+<div data-shell-header data-active="radicados"></div>
+
+<main id="contenido">
+
+  <div class="breadcrumb"><div class="container"><ol>
+    <li><a href="index.html">Inicio</a></li>
+    <li><span aria-current="page">Mis radicados</span></li>
+  </ol></div></div>
+
+  <header class="page-head">
+    <div class="container">
+      <span class="eyebrow">Mi perfil</span>
+      <h1>Mis radicados</h1>
+      <p>Valentina Ríos · Estudiante de Ingeniería de Sistemas · Sesión simulada. Aquí aparece cada solicitud con su estado, la dependencia responsable y la fecha estimada de respuesta.</p>
+    </div>
+  </header>
+
+  <div class="container section-sm">
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px" role="group" aria-label="Filtrar radicados por estado">
+      <button class="chip" type="button" data-filtro-radicado="" aria-pressed="true">Todos</button>
+      <button class="chip" type="button" data-filtro-radicado="en-proceso" aria-pressed="false">En proceso</button>
+      <button class="chip" type="button" data-filtro-radicado="requiere-info" aria-pressed="false">Requiere información</button>
+      <button class="chip" type="button" data-filtro-radicado="finalizado" aria-pressed="false">Finalizados</button>
+    </div>
+
+    <div data-radicados></div>
+
+    <div class="card mt6" style="display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap">
+      <div><h3 style="margin-bottom:4px">¿Necesitas radicar algo nuevo?</h3><p class="small muted" style="margin:0">Busca el trámite o usa el asistente si no sabes cómo se llama.</p></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-primary" href="tramites.html">Ver trámites</a><a class="btn btn-secondary" href="asistente.html">Usar el asistente</a></div>
+    </div>
+  </div>
+
+</main>
+
+<div data-shell-footer></div>
+<div data-shell-tabbar data-active="radicados"></div>
+
+<script src="assets/data.js?v=2"></script>
+<script src="assets/icons.js?v=2"></script>
+<script src="assets/shell.js?v=2"></script>
+<script src="assets/app.js?v=2"></script>
+</body>
+</html>

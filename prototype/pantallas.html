@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Índice de pantallas · Ruta U</title>
+<style>
+  :root{ --brand:#0f4c5c; --brand2:#14708a; --ink:#14202b; --muted:#63707e; --line:#dfe5ea; --bg:#f2f5f7; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .wrap{max-width:1280px;margin:0 auto;padding:40px 28px 80px}
+  header.top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:12px}
+  h1{font-size:30px;letter-spacing:-.025em;margin:0}
+  .kicker{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand2);font-weight:700;margin-bottom:8px}
+  .sub{color:#4a5562;max-width:62ch;margin:8px 0 0;font-size:14.5px}
+  .top-links{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;text-decoration:none;font-weight:650;font-size:13.5px;padding:10px 16px;border-radius:8px}
+  .btn.ghost{background:#fff;color:var(--brand);border:1px solid #c9d4db}
+  .note{background:#fff6e3;border:1px solid #e9c97f;color:#6b4a00;border-radius:10px;padding:12px 16px;font-size:13px;margin:22px 0 30px}
+  .grid{display:flex;flex-wrap:wrap;gap:22px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;width:380px;display:flex;flex-direction:column}
+  .shot{position:relative;height:238px;overflow:hidden;background:#eef2f4;border-bottom:1px solid var(--line)}
+  .shot iframe{position:absolute;top:0;left:0;width:1520px;height:952px;border:0;transform:scale(.25);transform-origin:top left;pointer-events:none}
+  .shot a{position:absolute;inset:0;z-index:2;display:block}
+  .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .num{font-family:Consolas,monospace;font-size:10.5px;color:#7b8492;letter-spacing:.08em}
+  h2{font-size:15.5px;margin:0;letter-spacing:-.01em}
+  .purpose{font-size:12.5px;color:var(--muted);margin:0;flex:1}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .tag{font-size:10.5px;background:#eef6f8;color:var(--brand);border-radius:99px;padding:2px 8px;font-weight:600}
+  .open{font-size:12.5px;color:var(--brand);text-decoration:none;font-weight:650}
+  .mobiles{display:flex;gap:26px;flex-wrap:wrap;margin-top:10px}
+  .phone{width:240px;border:9px solid #1c2b33;border-radius:26px;overflow:hidden;background:#1c2b33;box-shadow:0 14px 30px rgba(15,40,55,.16)}
+  .phone .inner{position:relative;height:412px;overflow:hidden;background:#fff}
+  .phone iframe{position:absolute;top:0;left:0;width:390px;height:800px;border:0;transform:scale(.569);transform-origin:top left;pointer-events:none}
+  .phone-cap{font-size:11.5px;color:var(--muted);text-align:center;margin-top:8px}
+  h3.sect{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);margin:44px 0 16px;border-top:1px solid var(--line);padding-top:18px}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding-top:18px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="kicker">Ruta U · Prototipo de media fidelidad</div>
+      <h1>Índice de pantallas</h1>
+      <p class="sub">Trece pantallas más la vista de dispositivos. Cada tarjeta muestra una vista previa real y enlaza a la pantalla navegable. El prototipo completo se abre desde <code>index.html</code>.</p>
+    </div>
+    <div class="top-links">
+      <a class="btn" href="index.html">Abrir inicio</a>
+      <a class="btn ghost" href="movil.html">Vista móvil</a>
+      <a class="btn ghost" href="mapa-sitio.html">Mapa del sitio</a>
+    </div>
+  </header>
+
+  <p class="note"><b>Prototipo académico.</b> Los contenidos son ficticios y las métricas que aparecen en pantalla son simuladas. Ninguna interacción envía datos reales.</p>
+
+  <h3 class="sect">Navegación y búsqueda</h3>
+  <div class="grid">
+    <article class="card">
+      <div class="shot"><iframe src="index.html" title="Vista previa de la pantalla de inicio" loading="lazy" tabindex="-1"></iframe><a href="index.html" aria-label="Abrir inicio"></a></div>
+      <div class="body"><span class="num">01 · INICIO</span><h2>Inicio</h2><p class="purpose">Buscador protagonista, acceso por perfil y por momento académico.</p><div class="tags"><span class="tag">Buscador global</span><span class="tag">4 perfiles</span></div><a class="open" href="index.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="tramites.html" title="Vista previa del hub de trámites" loading="lazy" tabindex="-1"></iframe><a href="tramites.html" aria-label="Abrir hub de trámites"></a></div>
+      <div class="body"><span class="num">02 · HUB</span><h2>Trámites</h2><p class="purpose">Los dos ejes como filtros combinables; 28 fichas agrupadas en cinco ciclos.</p><div class="tags"><span class="tag">Perfil</span><span class="tag">Momento</span><span class="tag">28 fichas</span></div><a class="open" href="tramites.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="buscar.html" title="Vista previa del buscador" loading="lazy" tabindex="-1"></iframe><a href="buscar.html" aria-label="Abrir buscador"></a></div>
+      <div class="body"><span class="num">03 · BÚSQUEDA</span><h2>Buscador con facetas</h2><p class="purpose">Sinónimos, cinco facetas, chips activos y conteo vivo. Incluye estado vacío.</p><div class="tags"><span class="tag">Sinónimos</span><span class="tag">aria-live</span></div><a class="open" href="buscar.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="asistente.html" title="Vista previa del asistente de trámites" loading="lazy" tabindex="-1"></iframe><a href="asistente.html" aria-label="Abrir asistente"></a></div>
+      <div class="body"><span class="num">04 · ASISTENTE</span><h2>Asistente de trámites</h2><p class="purpose">Tres preguntas para traducir una necesidad al nombre oficial del trámite.</p><div class="tags"><span class="tag">3 pasos</span><span class="tag">Opciones cerradas</span></div><a class="open" href="asistente.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="tramite.html?id=certificado-notas" title="Vista previa de una ficha de trámite" loading="lazy" tabindex="-1"></iframe><a href="tramite.html?id=certificado-notas" aria-label="Abrir ficha de trámite"></a></div>
+      <div class="body"><span class="num">05 · FICHA</span><h2>Ficha de trámite</h2><p class="purpose">Plantilla única de 12 campos con panel de resumen pegajoso.</p><div class="tags"><span class="tag">28 instancias</span><span class="tag">Migas</span></div><a class="open" href="tramite.html?id=certificado-notas">Abrir pantalla →</a></div>
+    </article>
+  </div>
+
+  <h3 class="sect">Seguimiento y servicio</h3>
+  <div class="grid">
+    <article class="card">
+      <div class="shot"><iframe src="radicados.html" title="Vista previa de mis radicados" loading="lazy" tabindex="-1"></iframe><a href="radicados.html" aria-label="Abrir mis radicados"></a></div>
+      <div class="body"><span class="num">06 · RADICADOS</span><h2>Mis radicados</h2><p class="purpose">Estado y progreso sin abrir el detalle; alerta cuando falta un documento.</p><div class="tags"><span class="tag">Filtro por estado</span><span class="tag">4 etapas</span></div><a class="open" href="radicados.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="radicado.html?id=RAD-2026-014872" title="Vista previa del detalle de radicado" loading="lazy" tabindex="-1"></iframe><a href="radicado.html?id=RAD-2026-014872" aria-label="Abrir detalle de radicado"></a></div>
+      <div class="body"><span class="num">07 · DETALLE</span><h2>Detalle del radicado</h2><p class="purpose">Línea de tiempo, acción pendiente primero y datos del radicado.</p><div class="tags"><span class="tag">Trazabilidad</span><span class="tag">Acción</span></div><a class="open" href="radicado.html?id=RAD-2026-014872">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="servicios.html" title="Vista previa de servicios" loading="lazy" tabindex="-1"></iframe><a href="servicios.html" aria-label="Abrir servicios"></a></div>
+      <div class="body"><span class="num">08 · SERVICIOS</span><h2>Servicios</h2><p class="purpose">Rama paralela a trámites: biblioteca, correo, licencias, inclusión.</p><div class="tags"><span class="tag">6 servicios</span></div><a class="open" href="servicios.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="normativa.html" title="Vista previa de normativa" loading="lazy" tabindex="-1"></iframe><a href="normativa.html" aria-label="Abrir normativa"></a></div>
+      <div class="body"><span class="num">09 · NORMATIVA</span><h2>Normativa</h2><p class="purpose">Reglamentos, calendario y políticas con enlaces desde cada ficha.</p><div class="tags"><span class="tag">Trazabilidad legal</span></div><a class="open" href="normativa.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="ayuda.html" title="Vista previa de ayuda y PQRS" loading="lazy" tabindex="-1"></iframe><a href="ayuda.html" aria-label="Abrir ayuda"></a></div>
+      <div class="body"><span class="num">10 · AYUDA</span><h2>Ayuda, glosario y PQRS</h2><p class="purpose">FAQ antes del formulario, canales alternativos y glosario de términos.</p><div class="tags"><span class="tag">7 campos</span><span class="tag">Glosario</span></div><a class="open" href="ayuda.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="accesibilidad.html" title="Vista previa de la declaración de accesibilidad" loading="lazy" tabindex="-1"></iframe><a href="accesibilidad.html" aria-label="Abrir declaración de accesibilidad"></a></div>
+      <div class="body"><span class="num">11 · ACCESIBILIDAD</span><h2>Declaración WCAG 2.1 AA</h2><p class="purpose">Conformidad, limitaciones conocidas y canal de reporte.</p><div class="tags"><span class="tag">WCAG 2.1</span><span class="tag">Declaración</span></div><a class="open" href="accesibilidad.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="mapa-sitio.html" title="Vista previa del mapa del sitio" loading="lazy" tabindex="-1"></iframe><a href="mapa-sitio.html" aria-label="Abrir mapa del sitio"></a></div>
+      <div class="body"><span class="num">12 · MAPA</span><h2>Mapa del sitio</h2><p class="purpose">La jerarquía completa en versión de texto, navegable con teclado.</p><div class="tags"><span class="tag">37 nodos</span><span class="tag">4 niveles</span></div><a class="open" href="mapa-sitio.html">Abrir pantalla →</a></div>
+    </article>
+    <article class="card">
+      <div class="shot"><iframe src="404.html" title="Vista previa de la página de error" loading="lazy" tabindex="-1"></iframe><a href="404.html" aria-label="Abrir página de error"></a></div>
+      <div class="body"><span class="num">13 · ERROR</span><h2>Página no encontrada</h2><p class="purpose">Tres salidas: buscador, asistente y trámites frecuentes.</p><div class="tags"><span class="tag">Recuperación</span></div><a class="open" href="404.html">Abrir pantalla →</a></div>
+    </article>
+  </div>
+
+  <h3 class="sect">Móvil · 390 px</h3>
+  <div class="mobiles">
+    <div>
+      <div class="phone"><div class="inner"><iframe src="index.html" title="Inicio en móvil" loading="lazy" tabindex="-1"></iframe></div></div>
+      <p class="phone-cap">Inicio</p>
+    </div>
+    <div>
+      <div class="phone"><div class="inner"><iframe src="tramites.html" title="Trámites en móvil" loading="lazy" tabindex="-1"></iframe></div></div>
+      <p class="phone-cap">Trámites</p>
+    </div>
+    <div>
+      <div class="phone"><div class="inner"><iframe src="buscar.html" title="Búsqueda en móvil" loading="lazy" tabindex="-1"></iframe></div></div>
+      <p class="phone-cap">Búsqueda</p>
+    </div>
+    <div>
+      <div class="phone"><div class="inner"><iframe src="radicados.html" title="Radicados en móvil" loading="lazy" tabindex="-1"></iframe></div></div>
+      <p class="phone-cap">Radicados</p>
+    </div>
+    <div>
+      <div class="phone"><div class="inner"><iframe src="tramite.html?id=certificado-notas" title="Ficha en móvil" loading="lazy" tabindex="-1"></iframe></div></div>
+      <p class="phone-cap">Ficha</p>
+    </div>
+  </div>
+
+  <footer>
+    <span>Ruta U · Índice de pantallas · versión 2.0</span>
+    <span>Las vistas previas son en vivo: cada marco carga la pantalla real.</span>
+  </footer>
+</div>
+</body>
+</html>
