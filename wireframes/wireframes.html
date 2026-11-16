@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframes de baja fidelidad · Ruta U</title>
+<style>
+  :root{ --ink:#1b2430; --g1:#8b95a1; --g2:#b8c0c9; --g3:#d7dce2; --g4:#eef1f4; --line:#c9d0d8; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;color:var(--ink);background:#f3f5f7;line-height:1.5}
+  .wrap{max-width:1180px;margin:0 auto;padding:40px 28px 80px}
+  h1{font-size:32px;margin:0 0 8px;letter-spacing:-.02em}
+  h2{font-size:20px;margin:0 0 6px}
+  h3{font-size:15px;margin:0}
+  p{margin:0 0 12px}
+  .sub{color:#5b6573;max-width:70ch}
+  .meta{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:#5b6573;margin:18px 0 28px;border-top:1px solid var(--g3);border-bottom:1px solid var(--g3);padding:10px 0}
+  .meta b{color:var(--ink)}
+  .screen{background:#fff;border:1px solid var(--g3);border-radius:12px;padding:22px;margin-bottom:26px;break-inside:avoid}
+  .screen-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:14px;flex-wrap:wrap}
+  .screen-head .n{font-family:Consolas,monospace;font-size:11px;background:#eef1f4;color:#4a5562;padding:3px 8px;border-radius:4px;letter-spacing:.06em}
+  .screen-head .purpose{font-size:12.5px;color:#5b6573;max-width:60ch}
+  .stage{display:grid;grid-template-columns:1fr 250px;gap:24px;align-items:start}
+  .wf{background:#fbfcfd;border:1.5px solid var(--line);border-radius:8px;padding:10px;position:relative}
+  .wf.mob{width:210px;margin:0 auto;border-radius:18px;padding:8px}
+  /* bloques */
+  .bar{height:9px;border-radius:3px;background:var(--g3)}
+  .bar.d{background:var(--g2)}
+  .bar.w30{width:30%}.bar.w45{width:45%}.bar.w60{width:60%}.bar.w80{width:80%}.bar.w100{width:100%}
+  .hdr{display:flex;align-items:center;gap:8px;border-bottom:1.5px solid var(--g3);padding-bottom:8px;margin-bottom:10px}
+  .logo{width:22px;height:22px;border-radius:4px;background:var(--g1);flex:0 0 auto}
+  .navdots{display:flex;gap:6px;margin-left:auto}
+  .navdots i{display:block;width:26px;height:6px;border-radius:2px;background:var(--g3)}
+  .block{border:1.4px dashed var(--g2);border-radius:5px;background:#fff;padding:9px;margin-bottom:8px}
+  .block.fill{background:var(--g4);border-style:solid;border-color:var(--g3)}
+  .btn{display:inline-block;height:20px;width:74px;border-radius:4px;background:var(--g1)}
+  .btn.ghost{background:#fff;border:1.4px solid var(--g1)}
+  .inp{height:24px;border:1.4px solid var(--g2);border-radius:4px;background:#fff}
+  .chip{display:inline-block;height:14px;width:48px;border-radius:9px;background:var(--g4);border:1px solid var(--g2)}
+  .thumb{width:100%;height:52px;border-radius:4px;background:repeating-linear-gradient(45deg,var(--g4),var(--g4) 6px,#fff 6px,#fff 12px);border:1px solid var(--g3)}
+  .col{display:flex;flex-direction:column;gap:7px}
+  .row{display:flex;gap:7px;align-items:center}
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+  .side{border:1.4px solid var(--g2);border-radius:5px;padding:8px;background:#fff}
+  .main{display:grid;grid-template-columns:170px 1fr;gap:8px}
+  .lbl{font-size:9.5px;text-transform:uppercase;letter-spacing:.09em;color:#7b8492;margin-bottom:4px}
+  .ann{position:absolute;width:17px;height:17px;border-radius:50%;background:#1b2430;color:#fff;font:700 10px/17px "Segoe UI",sans-serif;text-align:center;z-index:3}
+  .notes{font-size:12.5px;color:#3b4552}
+  .notes ol{margin:0;padding-left:18px}
+  .notes li{margin-bottom:7px}
+  .notes b{color:#0f4c5c}
+  .legend{background:#fff;border:1px solid var(--g3);border-radius:10px;padding:16px 20px;margin-bottom:26px;font-size:13px}
+  .legend ul{margin:6px 0 0;padding-left:18px;columns:2;column-gap:32px}
+  .legend li{margin-bottom:5px;break-inside:avoid}
+  .cap{display:flex;justify-content:space-between;font-size:11px;color:#7b8492;margin-top:8px}
+  .tag{display:inline-block;font-size:10px;border:1px solid var(--g2);border-radius:3px;padding:1px 5px;color:#5b6573}
+  .divider{height:1px;background:var(--g3);margin:8px 0}
+  .small{font-size:11px;color:#7b8492}
+  @media print{
+    body{background:#fff}
+    .wrap{max-width:none;padding:0}
+    .screen{border:0;padding:0;margin:0 0 18px;page-break-inside:avoid}
+    .legend{page-break-after:always}
+    .cover{page-break-after:always}
+    @page{size:A4 landscape;margin:12mm}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section class="cover">
+    <p style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7b8492;margin-bottom:14px">Arquitectura de la Información · Proyecto final</p>
+    <h1>Wireframes de baja fidelidad — Ruta U</h1>
+    <p class="sub">Diez pantallas clave del portal de trámites de la Universidad San Rafael. Cada pantalla incluye anotaciones numeradas sobre contenido, navegación y funcionalidad. La versión interactiva de media fidelidad está en <code>prototype/</code>.</p>
+    <div class="meta">
+      <span><b>Equipo:</b> Alejandro Aguilar · Alejandro Cabrera · Jesús Ramírez</span>
+      <span><b>Versión:</b> 2.0</span>
+      <span><b>Fecha:</b> noviembre de 2026</span>
+      <span><b>Formato:</b> A4 horizontal</span>
+    </div>
+
+    <div class="legend">
+      <b>Cómo leer estas pantallas</b>
+      <ul>
+        <li><b>Bloque punteado:</b> zona de contenido, aún sin diseño visual.</li>
+        <li><b>Bloque relleno gris:</b> contenedor con jerarquía definida.</li>
+        <li><b>Barra gris:</b> línea de texto. El ancho indica longitud relativa.</li>
+        <li><b>Rectángulo con borde:</b> campo de formulario o botón secundario.</li>
+        <li><b>Relleno oscuro:</b> botón primario o acción principal.</li>
+        <li><b>Círculo negro numerado:</b> anotación de decisión de diseño.</li>
+        <li><b>Trama diagonal:</b> imagen o ilustración pendiente.</li>
+        <li><b>Gris claro:</b> elemento secundario o deshabilitado.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 01 INICIO -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 01</span><h2 style="margin-top:6px">Inicio</h2></div>
+      <p class="purpose">Orientar en menos de 10 segundos: buscar, elegir perfil o entrar por momento académico.</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <span class="ann" style="right:6px;top:6px">1</span>
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i><i></i></div><span class="btn" style="width:56px"></span></div>
+        <div class="g2" style="grid-template-columns:1.15fr .85fr">
+          <div class="col">
+            <div class="bar d w45" style="height:14px"></div>
+            <div class="bar w80"></div><div class="bar w60"></div>
+            <div class="row" style="margin-top:6px"><div class="inp" style="flex:1"></div><span class="btn"></span></div>
+            <div class="row"><span class="chip"></span><span class="chip"></span><span class="chip"></span></div>
+          </div>
+          <div class="block fill"><div class="row"><span class="chip"></span><span class="chip"></span></div><div class="bar w80"></div><div class="bar w60"></div><div class="divider"></div><div class="row"><div class="logo" style="width:16px;height:16px"></div><div class="bar w60"></div></div><div class="row"><div class="logo" style="width:16px;height:16px"></div><div class="bar w45"></div></div></div>
+        </div>
+        <div class="divider" style="margin:12px 0"></div>
+        <div class="lbl">Lo más solicitado</div>
+        <div class="g3"><div class="block"><div class="thumb" style="height:26px"></div><div class="bar d w80" style="margin-top:6px"></div><div class="bar w60"></div></div><div class="block"><div class="thumb" style="height:26px"></div><div class="bar d w80" style="margin-top:6px"></div><div class="bar w60"></div></div><div class="block"><div class="thumb" style="height:26px"></div><div class="bar d w80" style="margin-top:6px"></div><div class="bar w60"></div></div></div>
+        <div class="lbl" style="margin-top:10px">¿Quién eres?</div>
+        <div class="g4"><div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div><div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div><div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div><div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div></div>
+        <span class="ann" style="left:6px;bottom:64px">5</span>
+        <span class="ann" style="left:6px;top:44px">4</span>
+        <span class="ann" style="right:6px;top:154px">3</span>
+        <span class="ann" style="left:6px;top:44px;display:none"></span>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>Barra de utilidades</b> con accesibilidad, transparencia y contacto. No compite con la navegación principal.</li>
+          <li><b>Encabezado persistente:</b> logo, cinco destinos globales, buscador y «Mi perfil». Sticky en escritorio.</li>
+          <li><b>Buscador protagonista:</b> el 68 % de los participantes empezó por aquí en el tree test. Va sobre el pliegue, con ejemplos de búsqueda real.</li>
+          <li><b>Acceso por perfil:</b> cuatro tarjetas, la primera decisión que toma el estudiante («¿esto es para mí?»).</li>
+          <li><b>Segundo eje:</b> momento académico, para quien no conoce el nombre del trámite.</li>
+          <li><b>Un solo CTA por zona.</b> Nunca dos botones primarios compitiendo.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Objetivo: búsqueda o perfil en ≤ 2 clics</span><span>Contenido: 3 trámites destacados · 4 perfiles · 5 ciclos</span></div>
+  </section>
+
+  <!-- 02 HUB -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 02</span><h2 style="margin-top:6px">Hub de trámites (dos ejes)</h2></div>
+      <p class="purpose">Resolver el problema central: no se sabe si buscar por quién soy o por qué momento vivo.</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <span class="ann" style="left:6px;top:40px">1</span>
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="row"><div class="bar" style="width:24px"></div><div class="bar" style="width:34px"></div><div class="bar d" style="width:56px"></div></div>
+        <div class="bar d w45" style="height:12px;margin:10px 0"></div>
+        <div class="bar w80"></div>
+        <div class="inp" style="margin:8px 0"></div>
+        <div class="lbl">Filtrar por perfil</div>
+        <div class="row"><span class="chip"></span><span class="chip"></span><span class="chip"></span><span class="chip"></span></div>
+        <span class="ann" style="right:6px;top:118px">2</span>
+        <div class="lbl" style="margin-top:10px">Filtrar por momento académico</div>
+        <div class="row"><span class="chip"></span><span class="chip"></span><span class="chip"></span><span class="chip"></span><span class="chip"></span></div>
+        <div class="divider"></div>
+        <span class="ann" style="right:6px;top:172px">3</span>
+        <div class="row" style="justify-content:space-between"><div class="bar d w45" style="height:11px"></div><div class="bar w30"></div></div>
+        <span class="ann" style="left:6px;top:206px">4</span>
+        <div class="g3" style="margin-top:8px">
+          <div class="block" style="margin:0"><div class="bar d w80"></div><div class="bar w100"></div><div class="bar w60"></div><div class="row" style="margin-top:6px"><span class="tag">1 día</span><span class="tag">gratis</span></div></div>
+          <div class="block" style="margin:0"><div class="bar d w80"></div><div class="bar w100"></div><div class="bar w60"></div><div class="row" style="margin-top:6px"><span class="tag">3 días</span></div></div>
+          <div class="block" style="margin:0"><div class="bar d w80"></div><div class="bar w100"></div><div class="bar w60"></div><div class="row" style="margin-top:6px"><span class="tag">virtual</span></div></div>
+        </div>
+        <div class="g3" style="margin-top:8px">
+          <div class="block" style="margin:0"><div class="bar d w80"></div><div class="bar w100"></div><div class="bar w60"></div></div>
+          <div class="block" style="margin:0"><div class="bar d w80"></div><div class="bar w100"></div><div class="bar w60"></div></div>
+          <div class="block" style="margin:0"><div class="bar d w80"></div><div class="bar w100"></div><div class="bar w60"></div></div>
+        </div>
+        <span class="ann" style="right:6px;bottom:8px">5</span>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>Migas de pan</b> desde el primer nivel: Inicio › Trámites. Refuerzan la ubicación y permiten volver sin usar el botón del navegador.</li>
+          <li><b>Eje 1 — perfil:</b> cuatro opciones, ninguna preseleccionada. Se eligió chip en lugar de pestaña para que ambos ejes se vean como filtros y no como secciones excluyentes.</li>
+          <li><b>Eje 2 — momento académico:</b> el vocabulario sale del card sorting, no de la estructura administrativa.</li>
+          <li><b>Agrupación por ciclo:</b> cada grupo muestra su conteo («10 trámites»). El usuario sabe cuánto hay antes de entrar.</li>
+          <li><b>Ficha en tarjeta:</b> nombre, resumen de una línea, tiempo y costo. Sin abrir nada ya se puede descartar.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Objetivo: llegar a una ficha en ≤ 2 clics</span><span>28 fichas agrupadas en 5 ciclos</span></div>
+  </section>
+
+  <!-- 03 BUSQUEDA -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 03</span><h2 style="margin-top:6px">Búsqueda con facetas</h2></div>
+      <p class="purpose">Resultados útiles cuando el usuario escribe con sus propias palabras.</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i></div></div>
+        <div class="main">
+          <div class="side">
+            <span class="ann" style="right:-9px;top:8px">1</span>
+            <div class="bar d w60" style="margin-bottom:8px"></div>
+            <div class="inp" style="height:20px"></div>
+            <div class="lbl" style="margin-top:8px">Perfil</div>
+            <div class="col" style="gap:4px"><div class="row"><span style="width:8px;height:8px;border:1px solid var(--g2);border-radius:50%"></span><div class="bar w60"></div></div><div class="row"><span style="width:8px;height:8px;border:1px solid var(--g2);border-radius:50%"></span><div class="bar w45"></div></div><div class="row"><span style="width:8px;height:8px;border:1px solid var(--g2);border-radius:50%"></span><div class="bar w60"></div></div></div>
+            <div class="divider"></div>
+            <div class="lbl">Momento académico</div>
+            <div class="col" style="gap:4px"><div class="row"><span style="width:8px;height:8px;border:1px solid var(--g2);border-radius:50%"></span><div class="bar w60"></div></div><div class="row"><span style="width:8px;height:8px;border:1px solid var(--g2);border-radius:50%"></span><div class="bar w45"></div></div></div>
+            <div class="divider"></div>
+            <div class="lbl">Costo</div>
+            <div class="row"><span style="width:9px;height:9px;border:1px solid var(--g2)"></span><div class="bar w60"></div></div>
+          </div>
+          <div>
+            <span class="ann" style="right:6px;top:8px">2</span>
+            <div class="row" style="justify-content:space-between"><div class="bar d w45"></div><div class="inp" style="width:74px;height:18px"></div></div>
+            <div class="row" style="margin:6px 0"><span class="chip"></span><span class="chip"></span><span class="chip" style="opacity:.4"></span></div>
+            <div class="block" style="display:flex;gap:8px;align-items:flex-start"><div style="flex:1"><div class="bar d w60"></div><div class="bar w100"></div><div class="bar w80"></div><div class="row" style="margin-top:6px"><span class="tag">1 día</span><span class="tag">gratis</span></div></div><span class="btn ghost" style="width:52px;height:18px"></span></div>
+            <div class="block" style="display:flex;gap:8px;align-items:flex-start"><div style="flex:1"><div class="bar d w45"></div><div class="bar w100"></div><div class="bar w60"></div></div><span class="btn ghost" style="width:52px;height:18px"></span></div>
+            <div class="block" style="display:flex;gap:8px;align-items:flex-start"><div style="flex:1"><div class="bar d w60"></div><div class="bar w100"></div><div class="bar w45"></div></div><span class="btn ghost" style="width:52px;height:18px"></span></div>
+            <div class="row" style="justify-content:center;margin-top:8px"><span class="chip"></span><span class="chip" style="opacity:.4"></span><span class="chip" style="opacity:.4"></span></div>
+          </div>
+        </div>
+        <span class="ann" style="left:6px;bottom:8px">4</span>
+        <span class="ann" style="right:6px;top:44px">3</span>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>Facetas fijas</b> en columna, nunca en un desplegable oculto: perfil, momento, modalidad, costo y tiempo. Son las cinco preguntas que hace el usuario.</li>
+          <li><b>Conteo vivo</b> con <code>aria-live</code>: «12 trámites encontrados». Es el primer dato que lee un lector de pantalla al filtrar.</li>
+          <li><b>Filtros activos visibles</b> como chips removibles, para que el usuario entienda por qué ve pocos resultados.</li>
+          <li><b>Sinónimos indexados:</b> «récord», «constancia académica» y «papeles para la visa» devuelven la misma ficha.</li>
+          <li><b>Orden por relevancia</b> por defecto (popularidad + coincidencia), con opción A–Z y respuesta más rápida.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Objetivo: ≥ 80 % de éxito sin usar el asistente</span><span>Máximo 2 niveles de filtros</span></div>
+  </section>
+
+  <!-- 04 EMPTY -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 04</span><h2 style="margin-top:6px">Estado vacío de búsqueda</h2></div>
+      <p class="purpose">El error más caro es dejar al usuario sin salida. Esta pantalla fue la corrección principal de la ronda 1.</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i></div></div>
+        <div class="main">
+          <div class="side" style="opacity:.55"><div class="bar d w60"></div><div class="inp" style="height:18px;margin:6px 0"></div><div class="bar w60"></div><div class="bar w45"></div></div>
+          <div class="block" style="text-align:center;padding:22px 14px;border-style:dashed">
+            <span class="ann" style="right:-9px;top:-9px">1</span>
+            <div style="width:34px;height:34px;border-radius:50%;background:var(--g4);margin:0 auto 8px;border:1px solid var(--g2)"></div>
+            <div class="bar d w45" style="margin:0 auto 8px;height:12px"></div>
+            <div class="bar w80" style="margin:0 auto 4px"></div>
+            <div class="bar w60" style="margin:0 auto 12px"></div>
+            <span class="ann" style="left:28%;bottom:34px">2</span>
+            <div class="row" style="justify-content:center"><span class="btn"></span><span class="btn ghost"></span></div>
+            <div class="divider" style="margin:14px 0 8px"></div>
+            <div class="lbl">Lo más buscado</div>
+            <div class="row" style="justify-content:center"><span class="chip"></span><span class="chip"></span><span class="chip"></span><span class="chip"></span></div>
+            <span class="ann" style="right:-9px;bottom:8px">3</span>
+          </div>
+        </div>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>Lenguaje humano, sin culpar:</b> «No encontramos ese trámite», no «consulta inválida».</li>
+          <li><b>Dos salidas reales:</b> asistente (para quien no sabe el nombre) y listado completo (para quien quiere explorar). Ambas son botones visibles, no enlaces de texto.</li>
+          <li><b>Recuperación por contenido:</b> los cuatro trámites más buscados, para que un error de ortografía no cueste la tarea.</li>
+          <li><b>Los filtros se mantienen</b> atenuados pero visibles: el usuario puede relajar un criterio sin perder su contexto.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Corrección de ronda 1: se añadieron las dos salidas y los accesos frecuentes</span><span>Estado vacío probado con 3 tareas</span></div>
+  </section>
+
+  <!-- 05 FICHA -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 05</span><h2 style="margin-top:6px">Ficha de trámite</h2></div>
+      <p class="purpose">Plantilla única para 28 trámites. Si cambia un campo, cambia en todas las fichas.</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i></div></div>
+        <div class="row"><div class="bar" style="width:22px"></div><div class="bar" style="width:30px"></div><div class="bar" style="width:26px"></div><div class="bar d" style="width:60px"></div></div>
+        <span class="ann" style="left:6px;top:42px">1</span>
+        <div class="row" style="margin:8px 0 4px"><span class="tag">Vida académica</span><span class="tag">Muy solicitado</span><span class="tag">Sin costo</span></div>
+        <div class="bar d w45" style="height:15px"></div>
+        <div class="bar w80"></div><div class="bar w60"></div>
+        <div class="row" style="margin-top:6px"><span class="tag">Registro Académico</span><span class="tag">1 día hábil</span><span class="tag">Virtual</span></div>
+        <div class="divider"></div>
+        <div style="display:grid;grid-template-columns:1fr 120px;gap:10px">
+          <div>
+            <span class="ann" style="left:6px;top:150px">2</span>
+            <div class="bar d w45"></div><div class="bar w100"></div><div class="bar w80"></div>
+            <div class="lbl" style="margin-top:8px">Requisitos</div>
+            <div class="col" style="gap:5px"><div class="row"><span style="width:10px;height:10px;border-radius:50%;background:var(--g3)"></span><div class="bar w80"></div></div><div class="row"><span style="width:10px;height:10px;border-radius:50%;background:var(--g3)"></span><div class="bar w60"></div></div><div class="row"><span style="width:10px;height:10px;border-radius:50%;background:var(--g3)"></span><div class="bar w80"></div></div></div>
+            <span class="ann" style="left:6px;bottom:58px">3</span>
+            <div class="lbl" style="margin-top:8px">Pasos</div>
+            <div class="col" style="gap:5px"><div class="row"><span style="width:12px;height:12px;border-radius:50%;border:1px solid var(--g2)"></span><div class="bar w80"></div></div><div class="row"><span style="width:12px;height:12px;border-radius:50%;border:1px solid var(--g2)"></span><div class="bar w60"></div></div><div class="row"><span style="width:12px;height:12px;border-radius:50%;border:1px solid var(--g2)"></span><div class="bar w80"></div></div></div>
+          </div>
+          <div class="side" style="position:relative">
+            <span class="ann" style="right:-9px;top:-9px">4</span>
+            <div class="bar d w60"></div>
+            <div class="divider" style="margin:6px 0"></div>
+            <div class="row" style="justify-content:space-between"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <div class="row" style="justify-content:space-between;margin-top:5px"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <div class="row" style="justify-content:space-between;margin-top:5px"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <span class="btn" style="width:100%;margin-top:8px"></span>
+            <div class="bar w60" style="margin:6px auto 0"></div>
+          </div>
+        </div>
+        <span class="ann" style="right:6px;bottom:8px">5</span>
+        <div class="block" style="margin-top:8px"><div class="bar w45"></div><div class="bar w80"></div></div>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>Migas con el ciclo</b> intermedio: Inicio › Trámites › Vida académica › Certificado de notas. Cuatro niveles, el máximo permitido.</li>
+          <li><b>Resumen antes de los requisitos:</b> qué es, para qué sirve y quién puede pedirlo. Evita que alguien lea diez requisitos de un trámite que no le corresponde.</li>
+          <li><b>Pasos numerados</b>, no párrafos. Cada paso empieza con un verbo en imperativo.</li>
+          <li><b>Panel de resumen pegajoso:</b> costo, tiempo, modalidad, canal y dependencia siempre visibles. El CTA «Iniciar solicitud» vive aquí.</li>
+          <li><b>Trámites relacionados</b> por ciclo y por dependencia: la navegación contextual que evita volver al inicio.</li>
+          <li><b>Cierre con retroalimentación</b> («¿te sirvió?») y responsable del contenido, para el ciclo de mantenimiento.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Plantilla de 12 campos · 28 instancias</span><span>Objetivo: responder costo y requisitos sin llamar</span></div>
+  </section>
+
+  <!-- 06 ASISTENTE -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 06</span><h2 style="margin-top:6px">Asistente de trámites</h2></div>
+      <p class="purpose">Traducir «necesito mis notas para una beca» al nombre oficial del trámite.</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i></div></div>
+        <div class="bar d w45" style="height:12px;margin:6px auto"></div>
+        <div class="bar w60" style="margin:0 auto"></div>
+        <span class="ann" style="left:6px;top:52px">1</span>
+        <div class="row" style="margin:12px 0"><div class="bar d w30" style="height:5px"></div><div class="bar d w30" style="height:5px"></div><div class="bar w30" style="height:5px"></div></div>
+        <div class="row" style="justify-content:space-between"><span class="small">1. Perfil</span><span class="small">2. Necesidad</span><span class="small">3. Urgencia</span></div>
+        <span class="ann" style="right:6px;top:76px">2</span>
+        <div class="bar d w60" style="height:11px;margin:12px 0 8px"></div>
+        <div class="g2">
+          <div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div>
+          <div class="block" style="margin:0;border-color:var(--g1);border-width:2px"><div class="bar d w60"></div><div class="bar w80"></div></div>
+          <div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div>
+          <div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div>
+          <div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div>
+          <div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div>
+        </div>
+        <span class="ann" style="left:6px;bottom:8px">3</span>
+        <div class="row" style="justify-content:space-between;margin-top:10px"><span class="bar w30" style="height:18px;border:1px solid var(--g2);background:#fff"></span><span class="btn"></span></div>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>Progreso de 3 pasos</b> con texto, no solo barras: el usuario sabe cuánto falta. Se puede volver atrás sin perder respuestas.</li>
+          <li><b>Tarjetas de opción</b> en lugar de listas desplegables: seis opciones visibles a la vez, con una frase de ejemplo que aclara el lenguaje administrativo.</li>
+          <li><b>Sin campo libre</b> en la versión 1: se evaluó un chat, pero en la prueba los usuarios escribían datos personales. Se cambió a opciones cerradas por privacidad y por precisión.</li>
+          <li><b>Salida siempre disponible:</b> el asistente no es un callejón; el buscador y el listado siguen en el encabezado.</li>
+          <li><b>Resultado explicado:</b> muestra hasta tres fichas con el motivo de la recomendación, no una sola respuesta opaca.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Objetivo: ≤ 45 s y 3 preguntas</span><span>Reduce el abandono de quien no conoce el nombre del trámite</span></div>
+  </section>
+
+  <!-- 07 RADICADOS -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 07</span><h2 style="margin-top:6px">Mis radicados</h2></div>
+      <p class="purpose">Eliminar la llamada «¿en qué va mi trámite?».</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i></div></div>
+        <div class="bar d w30" style="height:13px;margin:4px 0 4px"></div>
+        <div class="bar w60"></div>
+        <span class="ann" style="left:6px;top:52px">1</span>
+        <div class="row" style="margin:8px 0"><span class="chip"></span><span class="chip"></span><span class="chip"></span><span class="chip"></span></div>
+        <div class="block" style="position:relative">
+          <span class="ann" style="right:-9px;top:-9px">2</span>
+          <div class="row" style="justify-content:space-between"><div class="col" style="gap:3px"><div class="bar w45" style="height:6px"></div><div class="bar d w60"></div><div class="bar w80"></div></div><span class="tag">En proceso</span></div>
+          <div class="row" style="margin-top:8px"><div class="bar d w30" style="height:4px"></div><div class="bar d w30" style="height:4px"></div><div class="bar w30" style="height:4px"></div><div class="bar w30" style="height:4px"></div></div>
+          <span class="ann" style="right:-9px;bottom:8px">3</span>
+          <div class="row" style="margin-top:8px"><span class="btn ghost" style="width:60px;height:17px"></span></div>
+        </div>
+        <div class="block" style="position:relative;border-color:var(--g1)">
+          <div class="row" style="justify-content:space-between"><div class="col" style="gap:3px"><div class="bar w45" style="height:6px"></div><div class="bar d w60"></div></div><span class="tag" style="border-color:#1b2430;color:#1b2430">Requiere información</span></div>
+          <span class="ann" style="left:6px;bottom:8px">4</span>
+          <div class="row" style="margin-top:6px"><div class="bar w80" style="height:14px;background:#e8ebef"></div></div>
+          <div class="row" style="margin-top:6px"><span class="btn" style="width:76px;height:18px"></span><span class="btn ghost" style="width:50px;height:18px"></span></div>
+        </div>
+        <div class="block" style="opacity:.75">
+          <div class="row" style="justify-content:space-between"><div class="col" style="gap:3px"><div class="bar w45" style="height:6px"></div><div class="bar d w60"></div></div><span class="tag">Finalizado</span></div>
+          <div class="row" style="margin-top:8px"><div class="bar d w30" style="height:4px"></div><div class="bar d w30" style="height:4px"></div><div class="bar d w30" style="height:4px"></div><div class="bar d w30" style="height:4px"></div></div>
+        </div>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>Filtro por estado</b> en chips: todos, en proceso, requiere información, finalizados. «Requiere información» se separa porque implica una acción del usuario.</li>
+          <li><b>Número de radicado en monoespaciada</b> y nombre del trámite: el usuario reconoce la solicitud por el trámite, no por el código.</li>
+          <li><b>Barra de progreso de cuatro etapas</b> visible en la lista, sin abrir el detalle. Responde la pregunta principal de un vistazo.</li>
+          <li><b>Alerta accionable</b> cuando falta un documento: dice qué falta, cuánto tiempo hay y ofrece el botón para resolverlo en el mismo lugar.</li>
+          <li><b>Fecha estimada</b> siempre visible; si se cumple, el usuario no necesita llamar.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Objetivo: cero llamadas para consultar estado</span><span>3 estados · 4 etapas por radicado</span></div>
+  </section>
+
+  <!-- 08 DETALLE -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 08</span><h2 style="margin-top:6px">Detalle del radicado</h2></div>
+      <p class="purpose">Trazabilidad completa y acción concreta cuando algo se detiene.</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i></div></div>
+        <div class="row"><div class="bar" style="width:22px"></div><div class="bar" style="width:30px"></div><div class="bar d" style="width:52px"></div></div>
+        <div class="bar w30" style="height:6px;margin:8px 0 4px"></div>
+        <div class="bar d w45" style="height:14px"></div>
+        <div class="row" style="margin-top:6px"><span class="tag">Requiere información</span><span class="tag">Estimado: 5 dic</span></div>
+        <div class="block" style="margin-top:10px;background:#eef1f4"><div class="row"><span style="width:14px;height:14px;border-radius:50%;border:1.5px solid var(--g1)"></span><div style="flex:1"><div class="bar d w45"></div><div class="bar w80"></div></div></div><span class="ann" style="right:-9px;top:-9px">1</span></div>
+        <div style="display:grid;grid-template-columns:1fr 110px;gap:10px">
+          <div>
+            <span class="ann" style="left:6px;top:130px">2</span>
+            <div class="col" style="gap:0">
+              <div class="row" style="align-items:flex-start"><span style="width:12px;height:12px;border-radius:50%;background:var(--g1);margin-top:2px"></span><div style="flex:1"><div class="bar d w45"></div><div class="bar w30" style="height:5px"></div></div></div>
+              <div style="width:2px;height:16px;background:var(--g3);margin-left:5px"></div>
+              <div class="row" style="align-items:flex-start"><span style="width:12px;height:12px;border-radius:50%;background:var(--g1);margin-top:2px"></span><div style="flex:1"><div class="bar d w45"></div><div class="bar w30" style="height:5px"></div></div></div>
+              <div style="width:2px;height:16px;background:var(--g3);margin-left:5px"></div>
+              <div class="row" style="align-items:flex-start"><span style="width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--g1);margin-top:2px"></span><div style="flex:1"><div class="bar d w45"></div><div class="bar w30" style="height:5px"></div></div></div>
+              <div style="width:2px;height:16px;background:var(--g3);margin-left:5px"></div>
+              <div class="row" style="align-items:flex-start;opacity:.6"><span style="width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--g2);margin-top:2px"></span><div style="flex:1"><div class="bar w45"></div><div class="bar w30" style="height:5px"></div></div></div>
+            </div>
+            <span class="ann" style="left:6px;bottom:8px">3</span>
+            <div class="row" style="margin-top:10px"><span class="btn ghost"></span><span class="bar w30" style="height:20px;border:1px solid var(--g2);background:#fff"></span></div>
+          </div>
+          <div class="side">
+            <span class="ann" style="right:-9px;top:-9px">4</span>
+            <div class="bar d w60"></div><div class="divider" style="margin:6px 0"></div>
+            <div class="row" style="justify-content:space-between"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <div class="row" style="justify-content:space-between;margin-top:5px"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <div class="row" style="justify-content:space-between;margin-top:5px"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <span class="btn ghost" style="width:100%;margin-top:8px"></span>
+          </div>
+        </div>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>La alerta va primero,</b> antes de la línea de tiempo: si hay una acción pendiente, no puede quedar debajo del pliegue.</li>
+          <li><b>Línea de tiempo vertical</b> con cuatro estados y fecha/hora. El estado actual se distingue por forma y por texto, no solo por color.</li>
+          <li><b>Acciones al pie:</b> escribir a la dependencia o anular la solicitud (con ventana de 24 h). Ambas con confirmación.</li>
+          <li><b>Datos del radicado en panel lateral:</b> número, dependencia, fecha y estimado, más el enlace a la ficha del trámite.</li>
+          <li><b>Recordatorio de autoservicio:</b> «si supera el tiempo estimado, escríbenos desde aquí». Reduce la llamada y deja traza.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Objetivo: respuesta a «¿en qué va?» en ≤ 15 s</span><span>Una sola fuente de verdad: el radicado</span></div>
+  </section>
+
+  <!-- 09 CONTACTO -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 09</span><h2 style="margin-top:6px">Contacto y PQRS</h2></div>
+      <p class="purpose">Último recurso, pero bien resuelto: formulario corto y canales alternativos.</p>
+    </div>
+    <div class="stage">
+      <div class="wf">
+        <div class="hdr"><span class="logo"></span><div class="bar d w30"></div><div class="navdots"><i></i><i></i><i></i><i></i></div></div>
+        <div class="bar d w30" style="height:13px"></div>
+        <div class="bar w60"></div>
+        <div style="display:grid;grid-template-columns:1fr 120px;gap:12px;margin-top:10px">
+          <div>
+            <span class="ann" style="left:6px;top:52px">1</span>
+            <div class="lbl">Preguntas frecuentes</div>
+            <div class="col" style="gap:4px"><div style="border:1px solid var(--g2);border-radius:4px;padding:6px"><div class="row" style="justify-content:space-between"><div class="bar w80"></div><span class="small">+</span></div></div><div style="border:1px solid var(--g2);border-radius:4px;padding:6px"><div class="row" style="justify-content:space-between"><div class="bar w60"></div><span class="small">+</span></div></div><div style="border:1px solid var(--g2);border-radius:4px;padding:6px"><div class="row" style="justify-content:space-between"><div class="bar w80"></div><span class="small">+</span></div></div></div>
+            <span class="ann" style="left:6px;top:150px">2</span>
+            <div class="lbl" style="margin-top:10px">Radicar una PQRS</div>
+            <div class="row" style="gap:6px"><div class="inp" style="flex:1;height:18px"></div><div class="inp" style="flex:1;height:18px"></div></div>
+            <div class="row" style="gap:6px;margin-top:5px"><div class="inp" style="flex:1;height:18px"></div><div class="inp" style="flex:1;height:18px"></div></div>
+            <div class="inp" style="height:34px;margin-top:5px"></div>
+            <div class="row" style="margin-top:5px"><span style="width:10px;height:10px;border:1px solid var(--g2)"></span><div class="bar w60" style="height:6px"></div></div>
+            <span class="btn" style="margin-top:6px"></span>
+          </div>
+          <div class="side">
+            <span class="ann" style="right:-9px;top:6px">3</span>
+            <div class="bar d w60"></div><div class="divider" style="margin:6px 0"></div>
+            <div class="row" style="justify-content:space-between"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <div class="row" style="justify-content:space-between;margin-top:5px"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <div class="row" style="justify-content:space-between;margin-top:5px"><div class="bar w45" style="height:6px"></div><div class="bar w30" style="height:6px"></div></div>
+            <div class="block" style="margin-top:10px;background:#eef1f4"><div class="bar w80"></div><div class="bar w60"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>FAQ antes del formulario:</b> seis preguntas que resuelven el 80 % de los casos, con acordeón para no llenar la pantalla.</li>
+          <li><b>Formulario de siete campos</b> como máximo, en dos columnas y una sola pantalla. Se pidió nombre, documento, correo, tipo y mensaje; nada más.</li>
+          <li><b>Canales alternativos</b> visibles junto al formulario: teléfono, correo, WhatsApp, presencial y horario. No todos quieren escribir.</li>
+          <li><b>Confirmación con número de radicado</b> y plazo de 15 días hábiles. El usuario sale sabiendo cuándo esperar respuesta.</li>
+          <li><b>Aviso de datos sensibles</b> antes del campo de texto libre.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Objetivo: reducir PQRS por información faltante</span><span>7 campos · 1 pantalla</span></div>
+  </section>
+
+  <!-- 10 MOVIL -->
+  <section class="screen">
+    <div class="screen-head">
+      <div><span class="n">PANTALLA 10</span><h2 style="margin-top:6px">Móvil: inicio y menú</h2></div>
+      <p class="purpose">La misma arquitectura, no una versión reducida. El 71 % de las sesiones esperadas son móviles.</p>
+    </div>
+    <div class="stage">
+      <div style="display:flex;gap:26px;justify-content:center;flex-wrap:wrap">
+        <div>
+          <div class="wf mob">
+            <div class="row" style="justify-content:space-between;margin-bottom:6px"><span class="logo" style="width:18px;height:18px"></span><span class="bar w30" style="height:8px"></span><span class="bar" style="width:14px;height:9px;background:var(--g1)"></span></div>
+            <div class="bar d w80" style="height:10px"></div><div class="bar w100"></div>
+            <div class="inp" style="margin:6px 0;height:20px"></div>
+            <span class="btn" style="width:100%;height:18px"></span>
+            <span class="ann" style="right:-8px;top:-8px">1</span>
+            <div class="lbl" style="margin-top:8px">Lo más solicitado</div>
+            <div class="block" style="margin:0 0 6px"><div class="bar d w60"></div><div class="bar w80"></div></div>
+            <div class="block" style="margin:0 0 6px"><div class="bar d w60"></div><div class="bar w80"></div></div>
+            <div class="block" style="margin:0"><div class="bar d w60"></div><div class="bar w80"></div></div>
+            <span class="ann" style="right:-8px;bottom:26px">2</span>
+            <div style="display:flex;justify-content:space-between;border-top:1px solid var(--g2);padding-top:6px;margin-top:10px">
+              <div class="col" style="align-items:center;gap:2px"><span style="width:12px;height:12px;border-radius:3px;background:var(--g1)"></span><div class="bar" style="width:16px;height:4px"></div></div>
+              <div class="col" style="align-items:center;gap:2px"><span style="width:12px;height:12px;border-radius:3px;background:var(--g2)"></span><div class="bar" style="width:18px;height:4px"></div></div>
+              <div class="col" style="align-items:center;gap:2px"><span style="width:12px;height:12px;border-radius:3px;background:var(--g2)"></span><div class="bar" style="width:16px;height:4px"></div></div>
+              <div class="col" style="align-items:center;gap:2px"><span style="width:12px;height:12px;border-radius:3px;background:var(--g2)"></span><div class="bar" style="width:18px;height:4px"></div></div>
+              <div class="col" style="align-items:center;gap:2px"><span style="width:12px;height:12px;border-radius:3px;background:var(--g2)"></span><div class="bar" style="width:14px;height:4px"></div></div>
+            </div>
+          </div>
+          <p class="cap" style="justify-content:center">Inicio · 390 px</p>
+        </div>
+        <div>
+          <div class="wf mob">
+            <div class="row" style="justify-content:space-between;margin-bottom:6px"><span class="logo" style="width:18px;height:18px"></span><span class="bar w30" style="height:8px"></span><span class="bar" style="width:14px;height:9px;background:var(--g1)"></span></div>
+            <span class="ann" style="right:-8px;top:-8px">3</span>
+            <div class="col" style="gap:4px">
+              <div class="bar d w60" style="height:10px"></div>
+              <div class="bar d w45" style="height:10px;margin-top:4px"></div>
+              <div class="bar w80" style="height:6px;margin-left:8px"></div>
+              <div class="bar w60" style="height:6px;margin-left:8px"></div>
+              <div class="bar d w45" style="height:10px;margin-top:4px"></div>
+              <div class="bar w80" style="height:6px;margin-left:8px"></div>
+              <div class="bar d w45" style="height:10px;margin-top:4px"></div>
+              <div class="bar w80" style="height:6px;margin-left:8px"></div>
+              <div class="bar d w45" style="height:10px;margin-top:4px"></div>
+            </div>
+            <span class="ann" style="right:-8px;top:86px">4</span>
+            <div class="divider"></div>
+            <div class="row"><span class="bar w30" style="height:16px;border:1px solid var(--g2);background:#fff"></span><span class="bar w30" style="height:16px;border:1px solid var(--g2);background:#fff"></span></div>
+          </div>
+          <p class="cap" style="justify-content:center">Menú abierto · 390 px</p>
+        </div>
+      </div>
+      <div class="notes">
+        <ol>
+          <li><b>Buscador arriba del pliegue</b> y botón a ancho completo: en móvil no hay espacio para dos columnas.</li>
+          <li><b>Barra inferior de cinco destinos</b> (Inicio, Trámites, Buscar, Radicados, Ayuda). Nunca se oculta al hacer scroll: es la navegación primaria.</li>
+          <li><b>Menú colapsado</b> solo para lo secundario. Los cinco destinos principales no viven dentro de la hamburguesa.</li>
+          <li><b>Jerarquía por tamaño,</b> no por sangría profunda: dos niveles visibles y el tercero se revela al entrar.</li>
+          <li><b>Área táctil de 44 × 44 px</b> y texto de 15,5 px como mínimo; sin desplazamiento horizontal a 320 px.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="cap"><span>Mismos contenidos y misma taxonomía que escritorio</span><span>Breakpoints: 1000 / 820 / 720 px</span></div>
+  </section>
+
+</div>
+</body>
+</html>
