@@ -1,0 +1,21 @@
+principio,hallazgo,severidad,evidencia,correccion,estado,responsable
+Visibilidad del estado,El buscador no informa cuántos resultados hay al filtrar,3,captura-03,Conteo vivo con aria-live,Corregido,Jesús
+Visibilidad del estado,La barra de progreso del radicado no nombra la etapa,2,captura-07,Nombre de etapa bajo la barra,Corregido,Jesús
+Correspondencia con el mundo real,Etiqueta «Expedición de certificados» en el menú,3,captura-02,Certificado de notas,Corregido,Alejandro C.
+Correspondencia con el mundo real,«Subsanar» sin explicación en el estado,2,captura-08,Requiere información + qué falta,Corregido,Alejandro C.
+Control y libertad,El asistente no permite volver,3,captura-06,Botón Volver en los tres pasos,Corregido,Jesús
+Control y libertad,No se puede anular un radicado recién creado,2,captura-08,Anulación en 24 h,Corregido,Jesús
+Consistencia y estándares,CTA con nombres distintos según la página,2,captura-05,Iniciar solicitud en todo el portal,Corregido,Alejandro C.
+Consistencia y estándares,Formato de fecha distinto entre ficha y radicado,1,captura-05,Formato único 12 nov 2026,Corregido,Jesús
+Prevención de errores,El formulario PQRS no advierte sobre datos sensibles,2,captura-09,Aviso antes del campo libre,Corregido,Alejandro A.
+Prevención de errores,Se puede radicar sin documento y falla al final,3,captura-05,Validación en el campo,Corregido,Jesús
+Reconocer antes que recordar,Los filtros se pierden al volver de una ficha,3,captura-03,Filtros persistidos en la URL,Corregido,Jesús
+Reconocer antes que recordar,El usuario debe recordar el número de radicado,2,captura-07,Radicados listados en el perfil,Corregido,Jesús
+Flexibilidad y eficiencia,No hay atajo al trámite más usado,2,captura-01,Accesos frecuentes en inicio y vacío,Corregido,Alejandro C.
+Flexibilidad y eficiencia,Solo se puede ordenar por relevancia,1,captura-03,Orden A-Z y por rapidez,Corregido,Jesús
+Estética y minimalismo,La ficha muestra nueve bloques sin jerarquía,3,captura-05,Resumen→requisitos→pasos + panel,Corregido,Alejandro C.
+Recuperación de errores,El 404 no ofrece alternativas,3,captura-404,Búsqueda + asistente + frecuentes,Corregido,Jesús
+Ayuda y documentación,No hay glosario ni fecha de actualización,2,captura-05,Glosario y fecha por ficha,Corregido,Alejandro C.
+Ayuda y documentación,El contacto no indica tiempo de respuesta,2,captura-09,15 días hábiles visible,Corregido,Alejandro A.
+Accesibilidad (ext. principio 7),Foco invisible en el menú móvil,4,captura-movil,Anillo de foco de 3 px,Corregido,Jesús
+Accesibilidad,Los estados se distinguen solo por color,4,captura-07,Color + texto + forma,Corregido,Jesús

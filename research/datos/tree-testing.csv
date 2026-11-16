@@ -1,0 +1,31 @@
+tarea,participante,primer_clic_correcto,exito_total,tiempo_seg,ruta
+T1-certificado,P1,1,1,16,Inicio>Trámites>Vida académica
+T1-certificado,P2,1,1,20,Inicio>Trámites>Vida académica
+T1-certificado,P3,1,1,14,Inicio>Buscar>certificado
+T1-certificado,P4,1,1,22,Inicio>Trámites>Vida académica
+T1-certificado,P5,1,1,18,Inicio>Trámites
+T1-certificado,P6,1,1,18,Inicio>Trámites>Vida académica
+T2-homologacion,P1,1,1,38,Trámites>Vida académica
+T2-homologacion,P2,1,1,44,Trámites>Vida académica
+T2-homologacion,P3,0,1,52,Trámites>Ingreso>Vida académica
+T2-homologacion,P4,1,1,40,Trámites>Vida académica
+T2-homologacion,P5,1,1,36,Trámites>Vida académica
+T2-homologacion,P6,1,1,36,Trámites>Vida académica
+T3-reglamento,P1,1,1,48,Normativa>Reglamentos
+T3-reglamento,P2,0,1,66,Normativa>Calendario>Reglamentos
+T3-reglamento,P3,0,0,58,Servicios>Biblioteca
+T3-reglamento,P4,1,1,44,Normativa>Reglamentos
+T3-reglamento,P5,0,1,50,Trámites>Grado
+T3-reglamento,P6,1,1,44,Normativa>Reglamentos
+T4-diploma,P1,1,1,36,Trámites>Grado>Diploma
+T4-diploma,P2,1,1,42,Trámites>Grado>Diploma
+T4-diploma,P3,0,0,54,Servicios>Egresados
+T4-diploma,P4,1,1,34,Trámites>Grado
+T4-diploma,P5,0,1,40,Servicios
+T4-diploma,P6,1,1,28,Trámites>Grado>Diploma
+T5-interprete,P1,0,1,50,Trámites>Bienestar>Inclusión
+T5-interprete,P2,0,0,56,Servicios>Biblioteca
+T5-interprete,P3,0,0,48,Bienestar>Psicología
+T5-interprete,P4,0,1,44,Bienestar>Inclusión
+T5-interprete,P5,1,1,32,Trámites>Bienestar
+T5-interprete,P6,0,0,40,Servicios
