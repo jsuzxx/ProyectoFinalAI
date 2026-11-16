@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1604" viewBox="0 0 1040 1604" font-family="Segoe UI, system-ui, sans-serif" role="img" aria-label="Mapa del sitio de Ruta U">
+<defs><style><![CDATA[
+
+  .bg{fill:#ffffff}
+  .edge{stroke:#c9d2dc;stroke-width:1.4;fill:none}
+  .n0{fill:#0f4c5c}
+  .n1{fill:#e7f1f3;stroke:#0f4c5c;stroke-width:1.6}
+  .n2{fill:#ffffff;stroke:#c9d2dc;stroke-width:1.2}
+  .n3{fill:#f7f9fb;stroke:#dfe5ec;stroke-width:1}
+  .t0{fill:#ffffff;font-size:15px;font-weight:700}
+  .t1{fill:#0f4c5c;font-size:13.5px;font-weight:700}
+  .t2{fill:#1b2630;font-size:12px;font-weight:600}
+  .t3{fill:#4a5562;font-size:11.5px}
+  .lbl{fill:#7b8492;font-size:10.5px;letter-spacing:.08em}
+
+]]></style></defs>
+<rect class="bg" width="1040" height="1604"/>
+<text class="lbl" x="30" y="20">NIVEL 1</text>
+<text class="lbl" x="280" y="20">NIVEL 2</text>
+<text class="lbl" x="530" y="20">NIVEL 3</text>
+<text class="lbl" x="780" y="20">NIVEL 4</text>
+<path class="edge" d="M730.0 137.0 H755.0 V59.0 H780.0"/>
+<path class="edge" d="M730.0 137.0 H755.0 V111.0 H780.0"/>
+<path class="edge" d="M730.0 137.0 H755.0 V163.0 H780.0"/>
+<path class="edge" d="M730.0 137.0 H755.0 V215.0 H780.0"/>
+<path class="edge" d="M730.0 371.0 H755.0 V267.0 H780.0"/>
+<path class="edge" d="M730.0 371.0 H755.0 V319.0 H780.0"/>
+<path class="edge" d="M730.0 371.0 H755.0 V371.0 H780.0"/>
+<path class="edge" d="M730.0 371.0 H755.0 V423.0 H780.0"/>
+<path class="edge" d="M730.0 371.0 H755.0 V475.0 H780.0"/>
+<path class="edge" d="M480.0 393.5 H505.0 V527.0 H530.0"/>
+<path class="edge" d="M480.0 393.5 H505.0 V579.0 H530.0"/>
+<path class="edge" d="M480.0 393.5 H505.0 V631.0 H530.0"/>
+<path class="edge" d="M480.0 813.0 H505.0 V683.0 H530.0"/>
+<path class="edge" d="M480.0 813.0 H505.0 V735.0 H530.0"/>
+<path class="edge" d="M480.0 813.0 H505.0 V787.0 H530.0"/>
+<path class="edge" d="M480.0 813.0 H505.0 V839.0 H530.0"/>
+<path class="edge" d="M480.0 813.0 H505.0 V891.0 H530.0"/>
+<path class="edge" d="M480.0 813.0 H505.0 V943.0 H530.0"/>
+<path class="edge" d="M480.0 1047.0 H505.0 V995.0 H530.0"/>
+<path class="edge" d="M480.0 1047.0 H505.0 V1047.0 H530.0"/>
+<path class="edge" d="M480.0 1047.0 H505.0 V1099.0 H530.0"/>
+<path class="edge" d="M480.0 1255.0 H505.0 V1151.0 H530.0"/>
+<path class="edge" d="M480.0 1255.0 H505.0 V1203.0 H530.0"/>
+<path class="edge" d="M480.0 1255.0 H505.0 V1255.0 H530.0"/>
+<path class="edge" d="M480.0 1255.0 H505.0 V1307.0 H530.0"/>
+<path class="edge" d="M480.0 1255.0 H505.0 V1359.0 H530.0"/>
+<path class="edge" d="M480.0 1463.0 H505.0 V1411.0 H530.0"/>
+<path class="edge" d="M480.0 1463.0 H505.0 V1463.0 H530.0"/>
+<path class="edge" d="M480.0 1463.0 H505.0 V1515.0 H530.0"/>
+<rect class="n3" x="780" y="40.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="63.5">Aspirante</text>
+<rect class="n3" x="780" y="92.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="115.5">Estudiante</text>
+<rect class="n3" x="780" y="144.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="167.5">Egresado</text>
+<rect class="n3" x="780" y="196.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="219.5">Docente y administrativo</text>
+<rect class="n2" x="530" y="118.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="141.5">Por perfil</text>
+<rect class="n3" x="780" y="248.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="271.5">Ingreso y admisión</text>
+<rect class="n3" x="780" y="300.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="323.5">Vida académica</text>
+<rect class="n3" x="780" y="352.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="375.5">Pagos y financiación</text>
+<rect class="n3" x="780" y="404.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="427.5">Grado y titulación</text>
+<rect class="n3" x="780" y="456.0" width="200" height="38" rx="7"/>
+<text class="t3" x="792" y="479.5">Bienestar y apoyo</text>
+<rect class="n2" x="530" y="352.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="375.5">Por momento académico</text>
+<rect class="n2" x="530" y="508.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="531.5">Asistente de trámites</text>
+<rect class="n2" x="530" y="560.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="583.5">Buscador y filtros</text>
+<rect class="n2" x="530" y="612.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="635.5">Ficha de trámite (plantilla ×28)</text>
+<rect class="n1" x="280" y="374.5" width="200" height="38" rx="7"/>
+<text class="t1" x="292" y="398.0">Trámites</text>
+<rect class="n2" x="530" y="664.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="687.5">Biblioteca</text>
+<rect class="n2" x="530" y="716.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="739.5">Correo institucional</text>
+<rect class="n2" x="530" y="768.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="791.5">Licencias de software</text>
+<rect class="n2" x="530" y="820.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="843.5">Deportes y recreación</text>
+<rect class="n2" x="530" y="872.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="895.5">Unidad de Inclusión</text>
+<rect class="n2" x="530" y="924.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="947.5">Oficina de egresados</text>
+<rect class="n1" x="280" y="794.0" width="200" height="38" rx="7"/>
+<text class="t1" x="292" y="817.5">Servicios</text>
+<rect class="n2" x="530" y="976.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="999.5">Reglamentos y acuerdos</text>
+<rect class="n2" x="530" y="1028.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1051.5">Calendario académico</text>
+<rect class="n2" x="530" y="1080.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1103.5">Políticas institucionales</text>
+<rect class="n1" x="280" y="1028.0" width="200" height="38" rx="7"/>
+<text class="t1" x="292" y="1051.5">Normativa</text>
+<rect class="n2" x="530" y="1132.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1155.5">Preguntas frecuentes</text>
+<rect class="n2" x="530" y="1184.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1207.5">Canales de atención</text>
+<rect class="n2" x="530" y="1236.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1259.5">PQRS</text>
+<rect class="n2" x="530" y="1288.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1311.5">Glosario</text>
+<rect class="n2" x="530" y="1340.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1363.5">Accesibilidad</text>
+<rect class="n1" x="280" y="1236.0" width="200" height="38" rx="7"/>
+<text class="t1" x="292" y="1259.5">Ayuda</text>
+<rect class="n2" x="530" y="1392.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1415.5">Mis radicados</text>
+<rect class="n2" x="530" y="1444.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1467.5">Mis datos</text>
+<rect class="n2" x="530" y="1496.0" width="200" height="38" rx="7"/>
+<text class="t2" x="542" y="1519.5">Notificaciones</text>
+<rect class="n1" x="280" y="1444.0" width="200" height="38" rx="7"/>
+<text class="t1" x="292" y="1467.5">Mi perfil</text>
+<rect class="n0" x="30" y="928.2" width="170" height="46" rx="7"/>
+<text class="t0" x="42" y="955.8">Inicio</text>
+</svg>
