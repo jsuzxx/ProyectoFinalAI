@@ -20,6 +20,7 @@ Noviembre de 2026
 
 El prototipo no se empaqueta en PDF porque es interactivo. Se entrega como enlace o como carpeta:
 
+- **Repositorio del proyecto:** <https://github.com/jsuzxx/ProyectoFinalAI>
 - **Enlace local:** `prototype/index.html`
 - **Índice de pantallas:** `prototype/pantallas.html`
 - **Vista móvil:** `prototype/movil.html`

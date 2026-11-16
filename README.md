@@ -5,6 +5,8 @@
 Proyecto final de **Arquitectura de la Información** · Docente: Paul Sanmartin
 Equipo: **Alejandro Aguilar · Alejandro Cabrera · Jesús Ramírez** · Noviembre de 2026
 
+**Repositorio:** <https://github.com/jsuzxx/ProyectoFinalAI>
+
 ---
 
 ## Empezar en 30 segundos
