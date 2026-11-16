@@ -1,0 +1,16 @@
+# Sistema / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temporales de compilación
+*.tmp
+*.log
