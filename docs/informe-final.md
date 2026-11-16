@@ -316,6 +316,9 @@ En cada pantalla se anotó **contenido** (qué texto va y con qué prioridad), *
 
 Prototipo navegable en HTML/CSS/JS sin dependencias, con **13 pantallas** y **28 fichas** generadas desde un modelo de datos. Funciona en web y móvil con el mismo código y se puede abrir sin servidor ni conexión.
 
+> **Prototipo en línea:** <https://jsuzxx.github.io/ProyectoFinalAI/>
+> **Código y documentos:** <https://github.com/jsuzxx/ProyectoFinalAI>
+
 | Pantalla | Archivo | Interacción real |
 |---|---|---|
 | Inicio | `index.html` | Búsqueda global, accesos por perfil y ciclo |

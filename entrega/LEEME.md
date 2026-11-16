@@ -20,13 +20,14 @@ Noviembre de 2026
 
 El prototipo no se empaqueta en PDF porque es interactivo. Se entrega como enlace o como carpeta:
 
+- **Prototipo en línea (recomendado):** <https://jsuzxx.github.io/ProyectoFinalAI/> — se abre en cualquier navegador, sin descargas.
 - **Repositorio del proyecto:** <https://github.com/jsuzxx/ProyectoFinalAI>
 - **Enlace local:** `prototype/index.html`
 - **Índice de pantallas:** `prototype/pantallas.html`
 - **Vista móvil:** `prototype/movil.html`
 - **Paquete portable:** `entrega/RutaU-prototipo.zip` (descomprimir y abrir `index.html`)
 
-Si la plataforma exige un enlace, publicar la carpeta `prototype/` en cualquier hosting estático (GitHub Pages, Netlify Drop) y compartir la URL de `index.html`. No requiere backend.
+Si la plataforma exige un archivo, `entrega/RutaU-prototipo.zip` funciona sin conexión. La versión publicada en GitHub Pages es la misma carpeta `prototype/` y se actualiza automáticamente con cada cambio en `main`.
 
 ## Orden sugerido de lectura del informe
 
