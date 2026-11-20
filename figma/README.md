@@ -22,12 +22,14 @@ La IA consultó el sitio público y `assets/data.js`, y generó una SPA en espa�
 
 Como Figma Make **reinterpreta** el diseño, se creó un segundo archivo con las 27 capturas reales insertadas una a una a tamaño nativo y en posiciones exactas. Es la versión visualmente idéntica al prototipo HTML:
 
-- **Ruta U · Pantallas exactas:** <https://www.figma.com/design/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas>
+- **Ruta U · Pantallas exactas (diseño):** <https://www.figma.com/design/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas>
+- **Prototipo navegable de esas mismas pantallas:** <https://www.figma.com/proto/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas?node-id=3-32&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A32>
 - Permisos: **«Cualquiera puede ver»**.
-- Contenido: 15 capturas de escritorio (1440 × 900), 6 de móvil (390 × 844) y 6 vistas completas (1440 × 2600), ordenadas en tres bloques dentro de `Page 1`.
-- Cada imagen conserva sus píxeles originales: no hay reescalado ni reinterpretación. No son componentes editables; para eso está este kit.
+- Contenido: 15 capturas de escritorio (1440 × 900) convertidas en frames con una interacción «Al hacer clic → Navegar a» cada una; 6 de móvil (390 × 844) y 6 vistas completas (1440 × 2600) como imágenes de referencia dentro de `Page 1`.
+- Recorrido cableado: Inicio → Trámites → Buscar → Ficha → Asistente → Mis radicados → Radicado → Servicios → Normativa → Ayuda → Accesibilidad → Mapa → 404 → Índice → Vista móvil → Inicio. Se verificó en modo Presentar: 15 destinos distintos y regreso al frame inicial.
+- Cada pantalla conserva sus píxeles originales: no hay reescalado ni reinterpretación. La navegación es **por frame** (clic en cualquier punto), no por botón individual. Para reconstruir componentes editables está este kit.
 
-**Cuál usar:** el archivo «Pantallas exactas» para demostrar que el diseño es idéntico; el de Figma Make para mostrar una versión interactiva generada por IA; el kit local para reconstruir los componentes.
+**Cuál usar:** el prototipo «Pantallas exactas» para demostrar que el diseño es idéntico **y** navegable; el de Figma Make para mostrar una versión interactiva generada por IA; el kit local para reconstruir los componentes.
 
 ---
 

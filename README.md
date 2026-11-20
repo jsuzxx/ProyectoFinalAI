@@ -7,7 +7,7 @@ Equipo: **Alejandro Aguilar · Alejandro Cabrera · Jesús Ramírez** · Noviemb
 
 **Repositorio:** <https://github.com/jsuzxx/ProyectoFinalAI>
 **Prototipo en línea:** <https://jsuzxx.github.io/ProyectoFinalAI/>
-**Prototipo en Figma:** <https://www.figma.com/make/JPyHBysMuGdHzefQVpPLhD/Prototipo-navegable-Ruta-U> · [Pantallas idénticas al prototipo](https://www.figma.com/design/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas) · [Lienzo de Make](https://www.figma.com/design/ARmtizFOG1oFiuZ4lU5i4X/Ruta-U-%C2%B7-Prototipo-en-Figma)
+**Prototipo en Figma:** [Pantallas exactas navegables](https://www.figma.com/proto/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas?node-id=3-32&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A32) · [Archivo de esas pantallas](https://www.figma.com/design/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas) · [Figma Make (IA)](https://www.figma.com/make/JPyHBysMuGdHzefQVpPLhD/Prototipo-navegable-Ruta-U)
 
 ---
 
