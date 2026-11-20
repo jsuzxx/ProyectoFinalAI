@@ -580,7 +580,7 @@ Disponibles en `research/`: consentimiento informado, guion de entrevista, encue
 
 | Herramienta | Uso | Evidencia |
 |---|---|---|
-| Figma | Wireframes y prototipo | Historial de versiones y comentarios |
+| HTML/CSS + Git | Wireframes anotados y prototipo navegable | Archivos versionados y revisados por el equipo |
 | Miro | Card sorting y mapa de afinidad | Tablero con tarjetas y agrupaciones |
 | Trello | Planificación por sprints | Tablero con fechas y responsables |
 | Google Forms | Encuesta y consentimientos | Respuestas exportadas |

@@ -1,7 +1,7 @@
 # Guion de tree testing
 
 **Objetivo:** medir si la jerarquía propuesta se entiende **sin diseño visual**.
-**Participantes:** 6 (recomendado 10) · **Duración:** 15 min · **Herramienta:** Optimal Workshop, Treejack o un árbol en Figma/Miro sin estilos.
+**Participantes:** 6 (recomendado 10) · **Duración:** 15 min · **Herramienta:** Optimal Workshop, Treejack o un árbol en Miro o en una hoja de cálculo compartida, sin estilos.
 
 ## Montaje
 Árbol solo con texto: Inicio → 5 secciones → ciclos → fichas. Sin colores, sin íconos, sin descripciones.

@@ -17,8 +17,6 @@ El enunciado permite el uso de herramientas de IA siempre que se declare. Este d
 |---|---|---|---|
 | Asistente de IA conversacional (modelo de lenguaje) | Acceso web, sesiones de trabajo del equipo | Borradores de texto, estructura del informe, generación de contenido de ejemplo para las 28 fichas, revisión de redacción | Alto: todo el texto fue leído, corregido y aprobado por los tres integrantes |
 | Asistente de IA para código | Integrado en el editor | Apoyo en la escritura de HTML, CSS y JavaScript del prototipo | Alto: código revisado, probado en navegador y validado con checklist de accesibilidad |
-| Herramienta de diseño (Figma) | Plan Edu | Wireframes, librería de componentes y prototipo de referencia | Total: trabajo humano |
-| IA de Figma (Figma Make) | Plan Edu, 19 nov 2026 | Conversión del prototipo público a un prototipo navegable dentro de Figma, a partir de un prompt con la estructura, los tokens y los flujos | Medio: la IA generó la implementación; el equipo verificó las 13 vistas, los datos de `data.js` y los flujos en el navegador |
 | Generación de imágenes | No se usó | — | — |
 
 ## 3. Qué se hizo con IA, entregable por entregable
@@ -28,9 +26,7 @@ El enunciado permite el uso de herramientas de IA siempre que se declare. Este d
 | Personas y escenarios | Borrador de redacción a partir de los hallazgos reales de entrevistas | Los rasgos, citas y escenarios se ajustaron a lo observado; los nombres son ficticios y así se indica |
 | Mapa del sitio y taxonomía | Apoyo en la redacción de etiquetas; la estructura se decidió con card sorting y tree testing | Cada categoría tiene una decisión documentada en el informe (§3) |
 | Contenido de las 28 fichas | Generación de textos de ejemplo coherentes con el modelo de 12 campos | Revisión de coherencia, ortografía y lenguaje claro; los datos institucionales son ficticios y se declaran |
-| Wireframes | No se generaron con IA; se dibujaron a mano en Figma y se documentaron en HTML | Revisión del equipo |
-| Prototipo en Figma (Figma Make) | Prompt ejecutado el 19 nov 2026: la IA consultó el sitio público y `assets/data.js` y generó una SPA con las 13 vistas, los 28 trámites y los flujos. Prompt y enlaces en `figma/README.md` y `figma/prompt-figma-ai.md` | Recorrido verificado: Inicio → Trámites → ficha «Certificado de notas» → Mis radicados; aviso de datos simulados presente; permisos «cualquiera puede ver» |
-| Pantallas idénticas y navegables en Figma | Inserción manual de las 27 capturas reales del prototipo a tamaño nativo; las 15 de escritorio se convirtieron en frames y se cablearon manualmente con «Al hacer clic → Navegar a». Sin intervención de IA | Recorrido verificado en modo Presentar: 15 destinos distintos y regreso al inicio; permisos «cualquiera puede ver» |
+| Wireframes | No se generaron con IA; se construyeron como HTML anotado | Revisión del equipo |
 | Código del prototipo | Apoyo en la implementación de componentes y en la corrección de errores | Pruebas en navegador, revisión manual del código y verificación de accesibilidad |
 | Métricas y resultados | **No se generaron como datos reales.** Las cifras del informe son simulaciones declaradas | Marcadas como simuladas en el informe, en el prototipo y en este documento |
 | Conclusiones y reflexión crítica | Redacción asistida; las ideas y decisiones son del equipo | Discusión en equipo y edición final |

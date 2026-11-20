@@ -42,7 +42,7 @@ Todos participaron en: definición del problema, pruebas con usuarios, revisión
 |---|---|---|
 | Trello | Planificación por sprints, tablero «Por hacer / Haciendo / Revisión / Hecho» | Capturas semanales y registro de actividad |
 | Miro | Card sorting, mapa de afinidad, lluvia de ideas | Tablero exportado en PDF |
-| Figma | Wireframes, librería de componentes, prototipo de referencia | Historial de versiones y comentarios |
+| HTML/CSS + Git | Wireframes anotados y prototipo navegable | Archivos versionados y revisados en el repositorio |
 | Google Forms | Encuesta, consentimientos | Respuestas exportadas a CSV |
 | Google Drive | Repositorio de grabaciones, transcripciones y documentos | Carpeta compartida con permisos de edición |
 | WhatsApp / Teams | Coordinación diaria | Registro de acuerdos en la bitácora, no en el chat |

@@ -7,7 +7,6 @@ Equipo: **Alejandro Aguilar · Alejandro Cabrera · Jesús Ramírez** · Noviemb
 
 **Repositorio:** <https://github.com/jsuzxx/ProyectoFinalAI>
 **Prototipo en línea:** <https://jsuzxx.github.io/ProyectoFinalAI/>
-**Prototipo en Figma:** [Pantallas exactas navegables](https://www.figma.com/proto/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas?node-id=3-32&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A32) · [Archivo de esas pantallas](https://www.figma.com/design/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas) · [Figma Make (IA)](https://www.figma.com/make/JPyHBysMuGdHzefQVpPLhD/Prototipo-navegable-Ruta-U)
 
 ---
 
@@ -28,7 +27,6 @@ Equipo: **Alejandro Aguilar · Alejandro Cabrera · Jesús Ramírez** · Noviemb
 | Informe final | `docs/informe-final.md` | `docs/informe-final.pdf` · `entrega/Informe-Final.pdf` |
 | Wireframes anotados (10 pantallas) | `wireframes/wireframes.html` | `wireframes/wireframes.pdf` |
 | Prototipo interactivo (web + móvil) | `prototype/index.html` | — |
-| Kit de traspaso a Figma (capturas, tokens, iconos) | `figma/README.md` | `figma/prompt-figma-ai.md` |
 | Presentación (16 diapositivas) | `presentation/presentacion.html` | `presentation/presentacion.pdf` |
 | Mapa del sitio | `docs/ia/mapa-del-sitio.svg` | `entrega/Mapa-del-sitio.svg` |
 | Declaración de uso de IA | `docs/00-declaracion-uso-ia.md` | — |
@@ -79,13 +77,6 @@ FINALAI/
 ├── scripts/
 │   ├── gen_sitemap.py      Regenera el SVG del mapa del sitio
 │   └── build_pdf.py        Regenera los tres PDF con Edge/Chrome
-├── figma/                  Kit para reconstruir el prototipo en Figma
-│   ├── screens/            27 capturas (escritorio, móvil y vistas completas)
-│   ├── icons/              30 iconos SVG editables
-│   ├── tokens.json         Colores, tipografía, espaciado y sombras
-│   ├── screens.json        Inventario y nombres de frame
-│   ├── prompt-figma-ai.md  Prompt supuesto para la IA de Figma
-│   └── build_kit.py        Regenera tokens, iconos e inventario
 ├── entrega/                Copias finales para subir
 └── README.md
 ```
@@ -127,7 +118,7 @@ Marcados también en el informe; no afectan la navegación del prototipo.
 
 1. **Reemplazar los datos simulados** por los registros reales de las sesiones. Las plantillas están en `research/datos/`. Cada tabla del informe debe actualizarse y las conclusiones revisarse si cambian.
 2. **Ejecutar las sesiones** con los instrumentos de `research/`: 6 entrevistas, 42 encuestas, 8 card sorting, 6 tree testing, 5 + 5 usabilidad.
-3. **Adjuntar la evidencia de colaboración**: capturas reales de Trello, Miro, Figma y del historial de versiones. Hoy el plan está documentado, pero las capturas son la prueba verificable.
+3. **Adjuntar la evidencia de colaboración**: capturas reales de Trello, Miro y del historial de Git. Hoy el plan está documentado, pero las capturas son la prueba verificable.
 4. **Sustituir los datos institucionales ficticios** solo si la entrega lo exige con una institución real; en ese caso, revisar toda referencia a «Universidad San Rafael».
 5. **Grabar la presentación** si el docente la solicita en video además del PDF.
 
