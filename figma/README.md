@@ -18,6 +18,17 @@ La IA consultó el sitio público y `assets/data.js`, y generó una SPA en espa�
 
 **Limitación:** *«Abrir en el lienzo»* produce un frame de vista previa del estado actual, no los 21 frames editables por separado. Para el handoff completo de componentes y pantallas se usa el resto de este kit.
 
+### Archivo de pantallas idénticas al prototipo (19 nov 2026)
+
+Como Figma Make **reinterpreta** el diseño, se creó un segundo archivo con las 27 capturas reales insertadas una a una a tamaño nativo y en posiciones exactas. Es la versión visualmente idéntica al prototipo HTML:
+
+- **Ruta U · Pantallas exactas:** <https://www.figma.com/design/UkBoIHUTfp12tuVNAs4ul7/Ruta-U-%C2%B7-Pantallas-exactas>
+- Permisos: **«Cualquiera puede ver»**.
+- Contenido: 15 capturas de escritorio (1440 × 900), 6 de móvil (390 × 844) y 6 vistas completas (1440 × 2600), ordenadas en tres bloques dentro de `Page 1`.
+- Cada imagen conserva sus píxeles originales: no hay reescalado ni reinterpretación. No son componentes editables; para eso está este kit.
+
+**Cuál usar:** el archivo «Pantallas exactas» para demostrar que el diseño es idéntico; el de Figma Make para mostrar una versión interactiva generada por IA; el kit local para reconstruir los componentes.
+
 ---
 
 ## Contenido
