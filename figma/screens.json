@@ -1,0 +1,137 @@
+[
+  {
+    "frame": "01-inicio-desktop-completo",
+    "archivo": "screens/01-inicio-desktop-completo.png",
+    "tamano": "1440x2600"
+  },
+  {
+    "frame": "01-inicio-desktop",
+    "archivo": "screens/01-inicio-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "01-inicio-movil",
+    "archivo": "screens/01-inicio-movil.png",
+    "tamano": "390x844"
+  },
+  {
+    "frame": "02-tramites-desktop",
+    "archivo": "screens/02-tramites-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "02-tramites-movil",
+    "archivo": "screens/02-tramites-movil.png",
+    "tamano": "390x844"
+  },
+  {
+    "frame": "03-buscar-desktop",
+    "archivo": "screens/03-buscar-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "03-buscar-movil",
+    "archivo": "screens/03-buscar-movil.png",
+    "tamano": "390x844"
+  },
+  {
+    "frame": "04-ficha-desktop-completo",
+    "archivo": "screens/04-ficha-desktop-completo.png",
+    "tamano": "1440x2600"
+  },
+  {
+    "frame": "04-ficha-desktop",
+    "archivo": "screens/04-ficha-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "04-ficha-movil",
+    "archivo": "screens/04-ficha-movil.png",
+    "tamano": "390x844"
+  },
+  {
+    "frame": "05-asistente-desktop",
+    "archivo": "screens/05-asistente-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "05-asistente-movil",
+    "archivo": "screens/05-asistente-movil.png",
+    "tamano": "390x844"
+  },
+  {
+    "frame": "06-radicados-desktop",
+    "archivo": "screens/06-radicados-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "06-radicados-movil",
+    "archivo": "screens/06-radicados-movil.png",
+    "tamano": "390x844"
+  },
+  {
+    "frame": "07-radicado-desktop",
+    "archivo": "screens/07-radicado-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "08-servicios-desktop",
+    "archivo": "screens/08-servicios-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "09-normativa-desktop-completo",
+    "archivo": "screens/09-normativa-desktop-completo.png",
+    "tamano": "1440x2600"
+  },
+  {
+    "frame": "09-normativa-desktop",
+    "archivo": "screens/09-normativa-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "10-ayuda-desktop-completo",
+    "archivo": "screens/10-ayuda-desktop-completo.png",
+    "tamano": "1440x2600"
+  },
+  {
+    "frame": "10-ayuda-desktop",
+    "archivo": "screens/10-ayuda-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "11-accesibilidad-desktop",
+    "archivo": "screens/11-accesibilidad-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "12-mapa-sitio-desktop-completo",
+    "archivo": "screens/12-mapa-sitio-desktop-completo.png",
+    "tamano": "1440x2600"
+  },
+  {
+    "frame": "12-mapa-sitio-desktop",
+    "archivo": "screens/12-mapa-sitio-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "13-404-desktop",
+    "archivo": "screens/13-404-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "14-indice-pantallas-desktop-completo",
+    "archivo": "screens/14-indice-pantallas-desktop-completo.png",
+    "tamano": "1440x2600"
+  },
+  {
+    "frame": "14-indice-pantallas-desktop",
+    "archivo": "screens/14-indice-pantallas-desktop.png",
+    "tamano": "1440x900"
+  },
+  {
+    "frame": "15-showcase-movil-desktop",
+    "archivo": "screens/15-showcase-movil-desktop.png",
+    "tamano": "1440x900"
+  }
+]

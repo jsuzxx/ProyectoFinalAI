@@ -26,6 +26,7 @@ El prototipo no se empaqueta en PDF porque es interactivo. Se entrega como enlac
 - **Índice de pantallas:** `prototype/pantallas.html`
 - **Vista móvil:** `prototype/movil.html`
 - **Paquete portable:** `entrega/RutaU-prototipo.zip` (descomprimir y abrir `index.html`)
+- **Para armarlo en Figma:** `figma/README.md` (capturas, tokens, iconos y convención de frames)
 
 Si la plataforma exige un archivo, `entrega/RutaU-prototipo.zip` funciona sin conexión. La versión publicada en GitHub Pages es la misma carpeta `prototype/` y se actualiza automáticamente con cada cambio en `main`.
 

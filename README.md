@@ -27,6 +27,7 @@ Equipo: **Alejandro Aguilar · Alejandro Cabrera · Jesús Ramírez** · Noviemb
 | Informe final | `docs/informe-final.md` | `docs/informe-final.pdf` · `entrega/Informe-Final.pdf` |
 | Wireframes anotados (10 pantallas) | `wireframes/wireframes.html` | `wireframes/wireframes.pdf` |
 | Prototipo interactivo (web + móvil) | `prototype/index.html` | — |
+| Kit de traspaso a Figma (capturas, tokens, iconos) | `figma/README.md` | `figma/prompt-figma-ai.md` |
 | Presentación (16 diapositivas) | `presentation/presentacion.html` | `presentation/presentacion.pdf` |
 | Mapa del sitio | `docs/ia/mapa-del-sitio.svg` | `entrega/Mapa-del-sitio.svg` |
 | Declaración de uso de IA | `docs/00-declaracion-uso-ia.md` | — |
@@ -77,6 +78,13 @@ FINALAI/
 ├── scripts/
 │   ├── gen_sitemap.py      Regenera el SVG del mapa del sitio
 │   └── build_pdf.py        Regenera los tres PDF con Edge/Chrome
+├── figma/                  Kit para reconstruir el prototipo en Figma
+│   ├── screens/            27 capturas (escritorio, móvil y vistas completas)
+│   ├── icons/              30 iconos SVG editables
+│   ├── tokens.json         Colores, tipografía, espaciado y sombras
+│   ├── screens.json        Inventario y nombres de frame
+│   ├── prompt-figma-ai.md  Prompt supuesto para la IA de Figma
+│   └── build_kit.py        Regenera tokens, iconos e inventario
 ├── entrega/                Copias finales para subir
 └── README.md
 ```
