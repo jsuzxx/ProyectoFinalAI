@@ -6,6 +6,20 @@ Este directorio deja el prototipo HTML **listo para armar en Figma**. Figma no i
 
 ---
 
+## Ya está creado en Figma (19 nov 2026)
+
+Se ejecutó el prompt de `prompt-figma-ai.md` en **Figma Make** con la cuenta del equipo y se abrieron los resultados en el lienzo de Figma Design:
+
+- **Prototipo generado (Figma Make):** <https://www.figma.com/make/JPyHBysMuGdHzefQVpPLhD/Prototipo-navegable-Ruta-U>
+- **Archivo de diseño (Figma Design):** <https://www.figma.com/design/ARmtizFOG1oFiuZ4lU5i4X/Ruta-U-%C2%B7-Prototipo-en-Figma>
+- Permisos: **«Cualquiera puede ver»** en ambos enlaces.
+
+La IA consultó el sitio público y `assets/data.js`, y generó una SPA en español con las 13 vistas, los 28 trámites, el asistente, los radicados y el aviso de datos simulados. Verificado en el navegador: Inicio → Trámites → ficha «Certificado de notas» → Mis radicados (`RAD-2026-014872`).
+
+**Limitación:** *«Abrir en el lienzo»* produce un frame de vista previa del estado actual, no los 21 frames editables por separado. Para el handoff completo de componentes y pantallas se usa el resto de este kit.
+
+---
+
 ## Contenido
 
 ```

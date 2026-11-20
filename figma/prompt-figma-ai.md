@@ -1,7 +1,7 @@
 # Prompt supuesto para la IA de Figma
 
-> Texto redactado **como si se lo hubiéramos pedido** al asistente de Figma (Figma Make / IA de Figma) para convertir el prototipo web en un archivo de Figma editable.
-> Es un **supuesto**: no implica que la herramienta se haya ejecutado. Si no se ejecutó, decláralo como *prompt propuesto*, no como uso real.
+> Texto redactado originalmente **como si se lo hubiéramos pedido** al asistente de Figma (Figma Make / IA de Figma) para convertir el prototipo web en un archivo de Figma editable.
+> **Actualización 19 nov 2026:** el prompt sí se ejecutó en Figma Make con la cuenta del equipo. La IA consultó `https://jsuzxx.github.io/ProyectoFinalAI/` y `assets/data.js`, generó la SPA navegable y se abrió en el lienzo de Figma Design. Enlaces y alcance real en `figma/README.md`. En la declaración de uso de IA debe figurar como **prompt ejecutado**, no como supuesto.
 
 ---
 

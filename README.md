@@ -7,6 +7,7 @@ Equipo: **Alejandro Aguilar · Alejandro Cabrera · Jesús Ramírez** · Noviemb
 
 **Repositorio:** <https://github.com/jsuzxx/ProyectoFinalAI>
 **Prototipo en línea:** <https://jsuzxx.github.io/ProyectoFinalAI/>
+**Prototipo en Figma:** <https://www.figma.com/make/JPyHBysMuGdHzefQVpPLhD/Prototipo-navegable-Ruta-U> · [Archivo de diseño](https://www.figma.com/design/ARmtizFOG1oFiuZ4lU5i4X/Ruta-U-%C2%B7-Prototipo-en-Figma)
 
 ---
 
